@@ -1,0 +1,52 @@
+/*This part is so that the website will still look good on smaller screens.*/
+@media screen and (max-width: 1104px) {
+  /*When screen width is smaller than or equal to 1104px, the following styling will be applied...*/
+  .navbar {
+    display: table;
+  }
+  .navbar menu {
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
+  .navbar menu li {
+    position: relative;
+    margin: 20px 0;
+    display: none;
+  }
+  .navbar menu li a {
+    width: 90%;
+    padding: 25px;
+    font-size: 20px;
+    display: block;
+    border-radius: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+  .navbar .container .bar {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar .container .bar #times {
+    display: none;
+  }
+  /*When checkbox '#check' is checked, the following styling will be applied...*/
+  #check:checked ~ .navbar .container {
+    margin-bottom: 20px;
+  }
+  #check:checked ~ .navbar menu {
+    height: 338px;
+    border: 1px solid #f7f7f7;
+    box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
+  }
+  #check:checked ~ .navbar menu li {
+    display: block;
+  }
+  #check:checked ~ .navbar .container .bar #times {
+    display: block;
+  }
+  #check:checked ~ .navbar .container .bar #bars {
+    display: none;
+  }
+}
