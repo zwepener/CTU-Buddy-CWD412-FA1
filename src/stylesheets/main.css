@@ -21,69 +21,32 @@ body {
   box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
 }
 
-.navbar .logo {
+.navbar .container {
   display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.navbar .container a {
+  display: flex;
+  margin-right: auto;
+}
+
+.navbar .container a #logo {
   font-size: 35px;
   font-weight: 800;
   cursor: pointer;
-}
-
-.navbar .logo img {
   border: 1px solid #f7f7f7;
   border-radius: 10px;
   box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
 }
 
-menu {
-  display: flex;
-  margin: auto 0;
-  list-style: none;
-}
-
-menu li {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0 10px;
-}
-
-menu li a {
-  font-size: 14px;
-  color: #811627;
-  text-transform: capitalize;
-  text-decoration: none;
-  letter-spacing: 1px;
-  padding: 8px 12px;
-  border: 1px solid #f7f7f7;
-  border-radius: 10px;
-  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
-}
-
-menu li .active,
-menu li .active:hover,
-menu li .active:focus {
-  border: 1px solid #811627;
-  box-shadow: inset -7px -7px 17px #fff,
-    inset 7px 7px 17px rgba(70, 70, 70, 0.15);
-}
-
-menu li a:hover,
-menu li a:focus {
-  border: none;
-  box-shadow: inset -7px -7px 17px #fff,
-    inset 7px 7px 17px rgba(70, 70, 70, 0.15);
-}
-
-#check {
-  display: none;
-}
-
-.bar {
+.navbar .container .bar {
   position: relative;
   display: none;
 }
 
-.bar span {
+.navbar .container .bar span {
   color: #811627;
   height: 65px;
   line-height: 65px;
@@ -95,21 +58,68 @@ menu li a:focus {
   box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
 }
 
+.navbar menu {
+  display: flex;
+  margin: auto 0;
+  list-style: none;
+}
+
+.navbar menu li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.navbar menu li a {
+  font-size: 14px;
+  color: #811627;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  border: 1px solid #f7f7f7;
+  border-radius: 10px;
+  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+}
+
+.navbar menu li .active,
+.navbar menu li .active:hover,
+.navbar menu li .active:focus {
+  border: 1px solid #811627;
+  box-shadow: inset -7px -7px 17px #fff,
+    inset 7px 7px 17px rgba(70, 70, 70, 0.15);
+}
+
+.navbar menu li a:hover,
+.navbar menu li a:focus {
+  border: none;
+  box-shadow: inset -7px -7px 17px #fff,
+    inset 7px 7px 17px rgba(70, 70, 70, 0.15);
+}
+
+#check {
+  display: none;
+  float: right;
+}
+
+/*This part is so that the website will still look good on smaller screens.*/
 @media screen and (max-width: 1104px) {
+  /*When screen width is smaller than or equal to 1104px, the following styling will be applied...*/
   .navbar {
-    display: block;
+    display: table;
   }
-  menu {
+  .navbar menu {
     display: block;
     width: 100%;
     overflow: auto;
   }
-  menu li {
+  .navbar menu li {
     position: relative;
     margin: 20px 0;
     display: none;
   }
-  menu li a {
+  .navbar menu li a {
     width: 90%;
     padding: 25px;
     font-size: 20px;
@@ -119,17 +129,15 @@ menu li a:focus {
     transform: translateX(-50%);
     position: relative;
   }
-  .bar {
+  .navbar .container .bar {
     display: block;
-    position: absolute;
-    top: 25px;
-    right: 80px;
     cursor: pointer;
   }
-  .bar #times {
+  .navbar .container .bar #times {
     display: none;
   }
-  #check:checked ~ .navbar .logo {
+  /*When checkbox '#check' is checked, the following styling will be applied...*/
+  #check:checked ~ .navbar .container {
     margin-bottom: 20px;
   }
   #check:checked ~ .navbar menu {
@@ -141,10 +149,10 @@ menu li a:focus {
   #check:checked ~ .navbar menu li {
     display: block;
   }
-  #check:checked ~ .navbar .bar #times {
+  #check:checked ~ .navbar .container .bar #times {
     display: block;
   }
-  #check:checked ~ .navbar .bar #bars {
+  #check:checked ~ .navbar .container .bar #bars {
     display: none;
   }
 }
