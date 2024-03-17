@@ -94,7 +94,7 @@ body {
 
 .navbar menu li a:hover,
 .navbar menu li a:focus {
-  border: none;
+  border: solid 1px #eee;
   box-shadow: inset -7px -7px 17px #fff,
     inset 7px 7px 17px rgba(70, 70, 70, 0.15);
 }
