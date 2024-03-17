@@ -14,11 +14,11 @@ body {
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid #f7f7f7;
-  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+  box-shadow: 7px 7px 17px #46464626;
 }
 
 .navbar .container {
@@ -33,13 +33,13 @@ body {
 }
 
 .navbar .container a #logo {
-  user-select: none;
   font-size: 35px;
   font-weight: 800;
   cursor: pointer;
+  user-select: none;
   border: 1px solid #f7f7f7;
   border-radius: 10px;
-  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+  box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
 }
 
 .navbar .container .bar {
@@ -56,7 +56,7 @@ body {
   text-align: center;
   border: 1px solid #f7f7f7;
   border-radius: 10px;
-  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+  box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
 }
 
 .navbar menu {
@@ -82,7 +82,7 @@ body {
   padding: 8px 12px;
   border: 1px solid #f7f7f7;
   border-radius: 10px;
-  box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+  box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
 }
 
 .navbar menu li .active {
@@ -93,15 +93,13 @@ body {
 .navbar menu li .active:hover,
 .navbar menu li .active:focus {
   border: 1px solid #811627;
-  box-shadow: inset -7px -7px 17px #fff,
-    inset 7px 7px 17px rgba(70, 70, 70, 0.15);
+  box-shadow: inset -7px -7px 17px white, inset 7px 7px 17px #46464626;
 }
 
 .navbar menu li a:hover,
 .navbar menu li a:focus {
   border: solid 1px #eee;
-  box-shadow: inset -7px -7px 17px #fff,
-    inset 7px 7px 17px rgba(70, 70, 70, 0.15);
+  box-shadow: inset -7px -7px 17px white, inset 7px 7px 17px #46464626;
 }
 
 #check {
@@ -150,7 +148,7 @@ body {
     height: 338px;
     border: 1px solid #f7f7f7;
     border-radius: 10px;
-    box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
+    box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
   }
   #check:checked ~ .navbar menu li {
     display: block;
