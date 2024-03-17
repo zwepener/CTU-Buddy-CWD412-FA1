@@ -21,14 +21,14 @@ body {
   box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
 }
 
-.logo {
+.navbar .logo {
   display: flex;
   font-size: 35px;
   font-weight: 800;
   cursor: pointer;
 }
 
-.logo img {
+.navbar .logo img {
   border: 1px solid #f7f7f7;
   border-radius: 10px;
   box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(70, 70, 70, 0.15);
