@@ -13,4 +13,3 @@ $(document).ready(() => {
     $(".navbar").html($parsedData);
   });
 });
-
