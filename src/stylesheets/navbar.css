@@ -60,12 +60,11 @@
   margin: 0 10px;
 }
 
-.navbar menu li a {
+.navbar menu li span {
   user-select: none;
   font-size: 14px;
   color: #811627;
   text-transform: capitalize;
-  text-decoration: none;
   letter-spacing: 1px;
   padding: 8px 12px;
   transition: all 0.3s;
@@ -74,20 +73,20 @@
   box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
 }
 
-.navbar menu .active a {
-  pointer-events: none;
-}
-
-.navbar menu .active a,
-.navbar menu .active a:hover,
-.navbar menu .active a:focus {
-  border: 1px solid #811627;
+.navbar menu li span:hover,
+.navbar menu li span:focus {
+  border: solid 1px #eee;
   box-shadow: inset -7px -7px 17px white, inset 7px 7px 17px #46464626;
 }
 
-.navbar menu li a:hover,
-.navbar menu li a:focus {
-  border: solid 1px #eee;
+.navbar menu .active span {
+  pointer-events: none;
+}
+
+.navbar menu .active span,
+.navbar menu .active span:hover,
+.navbar menu .active span:focus {
+  border: 1px solid #811627;
   box-shadow: inset -7px -7px 17px white, inset 7px 7px 17px #46464626;
 }
 
@@ -111,7 +110,7 @@
     margin: 20px 0;
     display: none;
   }
-  .navbar menu li a {
+  .navbar menu li span {
     width: 90%;
     padding: 25px;
     font-size: 20px;

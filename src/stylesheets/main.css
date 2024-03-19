@@ -11,6 +11,18 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #eee;
-  overflow: hidden;
+  height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  margin: 20px;
+  padding: 20px;
+
+  border: 1px solid #f7f7f7;
+  border-radius: 10px;
+  box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
 }
