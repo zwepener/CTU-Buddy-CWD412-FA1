@@ -7,7 +7,7 @@ $(document).ready(() => {
     menuitems.forEach((item) => {
       const itemvalue = $(item).find("a");
       if ($(itemvalue).attr("href") === currentPage) {
-        $(item).addClass("active"); 
+        $(item).addClass("active");
       }
     });
     $(".navbar").html($parsedData);
