@@ -1,5 +1,3 @@
-const zip = (...arrays) => arrays[0].map((_, c) => arrays.map((row) => row[c]));
-
 const Pages = [
   "home.html",
   "timetable.html",
