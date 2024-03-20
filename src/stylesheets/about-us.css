@@ -1,0 +1,62 @@
+.content .feedback-form {
+  text-align: center;
+  height: 100%;
+}
+
+.content .feedback-form h3 {
+  position: relative;
+}
+
+.content .feedback-form .form-box {
+  position: relative;
+  max-width: 480px;
+  margin-top: 10px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #f7f7f7;
+  border-radius: 10px;
+  box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
+}
+
+.content .feedback-form .form-box form .form-field {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.content .feedback-form .form-box form .form-field:nth-child(5) {
+  width: 100%;
+}
+
+.content .feedback-form .form-box form .form-field input:not([type="radio"]) {
+  width: 269px;
+  right: 0;
+  border-radius: 30px;
+  padding: 10px;
+  border: solid 1px #f7f7f7;
+}
+
+.content .feedback-form .form-box form .form-field input[type="radio"] {
+  margin-left: 10px;
+}
+
+.content .feedback-form .form-box form .form-field textarea,
+.content .feedback-form .form-box form #submit {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.content .feedback-form .form-box form textarea {
+  resize: none;
+  padding: 5px;
+}
+
+.content .feedback-form .form-box form #submit {
+  color: white;
+  padding: 8px 12px;
+  background-color: #811627;
+}
