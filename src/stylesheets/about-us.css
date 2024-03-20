@@ -31,12 +31,21 @@
   width: 100%;
 }
 
+.content .feedback-form .form-box form .form-field i {
+  color: #811627;
+}
+
 .content .feedback-form .form-box form .form-field input:not([type="radio"]) {
   width: 269px;
   right: 0;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 10px;
   border: solid 1px #f7f7f7;
+}
+
+.content .feedback-form .form-box form .form-field input:not([type="radio"]):focus {
+  outline: solid 1px #811627;
+  box-shadow: inset -7px -7px 17px white, inset 7px 7px 17px #46464626;
 }
 
 .content .feedback-form .form-box form .form-field input[type="radio"] {
@@ -53,6 +62,10 @@
 .content .feedback-form .form-box form textarea {
   resize: none;
   padding: 5px;
+}
+
+.content .feedback-form .form-box form textarea:focus {
+  outline: solid 1px #811627;
 }
 
 .content .feedback-form .form-box form #submit {
