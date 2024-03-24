@@ -4,6 +4,11 @@
 
 /* Local Style Imports */
 @import "navbar.css";
+@import "home.css";
+@import "timetable.css";
+@import "discussion.css";
+@import "share-resources.css";
+@import "about-us.css";
 @import "contact-us.css";
 
 /* Base Stylings */
