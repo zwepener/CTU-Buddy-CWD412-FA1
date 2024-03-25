@@ -35,14 +35,16 @@ $(document).ready(() => {
   loadContent(Pages[0]);
 });
 
-function uploadClick() {
+function defaultClickAlert() {
   alert(
-    "Due to the static requirement of FA 1, no logic has been added to this button yet."
+    "Due to the static nature of FA 1, no logic has been added to this element's onclick event yet."
   );
 }
 
+function uploadClick() {
+  defaultClickAlert();
+}
+
 function downloadClick() {
-  alert(
-    "Due to the static requirement of FA 1, no logic has been added to this button yet."
-  );
+  defaultClickAlert();
 }
