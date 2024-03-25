@@ -110,11 +110,9 @@
     width: 90%;
     padding: 25px;
     font-size: 20px;
-    display: block;
     border-radius: 30px;
     left: 50%;
     transform: translateX(-50%);
-    position: relative;
   }
   .navbar .container .bar {
     display: block;
@@ -123,7 +121,7 @@
   .navbar .container .bar #times {
     display: none;
   }
-  /*When checkbox '#check' is checked, the following styling will be applied...*/
+  /* When checkbox '#check' is checked, the following styling will be applied... */
   #check:checked ~ .navbar .container {
     margin-bottom: 20px;
   }
