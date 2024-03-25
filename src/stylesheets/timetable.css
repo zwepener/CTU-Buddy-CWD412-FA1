@@ -28,6 +28,11 @@
   width: 100vw;
 }
 
+.timetable h1,
+.timetable h3 {
+  color: white;
+}
+
 .timetable h1 {
   font-size: 40px; /* Set the font size for h1 */
 }
