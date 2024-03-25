@@ -1,21 +1,35 @@
-.resources-table table {
-  position: relative;
-  margin: 0 auto;
-  user-select: none;
-  border-collapse: collapse;
+.resources-table .table-fixed-header {
+  display: inline-block;
   width: 100%;
-  height: 60vh;
-  overflow: visible;
+  overflow-y: auto;
+  max-height: 70vh;
 }
 
-.resources-table table,
-.resources-table table th,
-.resources-table table td {
-  border: 1px solid;
+.resources-table .table-fixed-header table {
+  border-collapse: collapse;
+  position: relative;
+  user-select: none;
+  width: 100%;
 }
 
-.resources-table table td {
-  padding: 5px;
+.resources-table .table-fixed-header table thead {
+  color: #811627;
+  position: sticky;
+  top: 0;
+  outline: 2px solid;
+}
+
+.resources-table .table-fixed-header table thead th {
+  background: #eee;
+}
+
+.resources-table .table-fixed-header table thead th,
+.resources-table .table-fixed-header table tbody tr td {
+  padding: 10px;
+}
+
+.resources-table .table-fixed-header table tbody tr:hover {
+  background-color: whitesmoke;
 }
 
 .resources-table .buttons {

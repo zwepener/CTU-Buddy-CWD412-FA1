@@ -1,37 +1,43 @@
 <div class="resources-table">
-  <table>
-    <thead>
-      <tr>
-        <th scope="col">Title</th>
-        <th scope="col">Filename</th>
-        <th scope="col">Module</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td valign="top">CF412 - FA1</td>
-        <td valign="top">CF412 FA1 (2024 Q1).pdf</td>
-        <td valign="top">CF412</td>
-      </tr>
-      <tr>
-        <td valign="top">CWD412 - FA1</td>
-        <td valign="top">CWD412 FA1 (2024 Q1).zip</td>
-        <td valign="top">CWD412</td>
-      </tr>
-      <tr>
-        <td valign="top">ENA412 - FA1</td>
-        <td valign="top">ENA412 FA1 (2024 Q1).pdf</td>
-        <td valign="top">ENA412</td>
-      </tr>
-      <tr>
-        <td valign="top">RD412 - FA1</td>
-        <td valign="top">RD412 FA1 (2024 Q1).pdf</td>
-        <td valign="top">RD412</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="default table-fixed-header">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Filename</th>
+          <th scope="col">Module</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="top">CF412 - FA1</td>
+          <td valign="top">CF412 FA1 (2024 Q1).pdf</td>
+          <td valign="top">CF412</td>
+        </tr>
+        <tr>
+          <td valign="top">CWD412 - FA1</td>
+          <td valign="top">CWD412 FA1 (2024 Q1).zip</td>
+          <td valign="top">CWD412</td>
+        </tr>
+        <tr>
+          <td valign="top">ENA412 - FA1</td>
+          <td valign="top">ENA412 FA1 (2024 Q1).pdf</td>
+          <td valign="top">ENA412</td>
+        </tr>
+        <tr>
+          <td valign="top">RD412 - FA1</td>
+          <td valign="top">RD412 FA1 (2024 Q1).pdf</td>
+          <td valign="top">RD412</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <div class="buttons">
-    <button class="button-default" id="upload"><i class="fa fa-solid fa-upload"></i> Upload</button>
-    <button class="button-default" id="download"><i class="fa fa-solid fa-download"></i> Download</button>
+    <button class="button-default" id="upload" onclick="javascript:uploadClick()">
+      <i class="fa fa-solid fa-upload"></i>&nbsp;Upload
+    </button>
+    <button class="button-default" id="download" onclick="javascript:downloadClick()">
+      <i class="fa fa-solid fa-download"></i>&nbsp;Download
+    </button>
   </div>
 </div>

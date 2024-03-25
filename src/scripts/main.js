@@ -7,14 +7,14 @@ const Pages = [
   "contact-us.html",
 ];
 
-loadContent = (Page) => {
+function loadContent(Page) {
   const PagePath = `pages/${Page}`;
   $.get(PagePath, (content) => {
     if (content) {
       $(".content").html(content);
     }
   });
-};
+}
 
 var currOpt;
 $(document).ready(() => {
@@ -34,3 +34,15 @@ $(document).ready(() => {
   currOpt.classList.add("active");
   loadContent(Pages[0]);
 });
+
+function uploadClick() {
+  alert(
+    "Due to the static requirement of FA 1, no logic has been added to this button yet."
+  );
+}
+
+function downloadClick() {
+  alert(
+    "Due to the static requirement of FA 1, no logic has been added to this button yet."
+  );
+}
