@@ -58,13 +58,10 @@
   align-items: center;
   text-align: center;
   margin: 0 10px;
-}
 
-.navbar menu li span {
   user-select: none;
   font-size: 14px;
   color: #811627;
-  text-transform: capitalize;
   letter-spacing: 1px;
   padding: 8px 12px;
   transition: all 0.3s;
@@ -73,19 +70,19 @@
   box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
 }
 
-.navbar menu li span:hover,
-.navbar menu li span:focus {
+.navbar menu li:hover,
+.navbar menu li:focus {
   border: solid 1px #eee;
   box-shadow: inset -7px -7px 17px white, inset 7px 7px 17px #46464626;
 }
 
-.navbar menu .active span {
+.navbar menu .active {
   pointer-events: none;
 }
 
-.navbar menu .active span,
-.navbar menu .active span:hover,
-.navbar menu .active span:focus {
+.navbar menu .active,
+.navbar menu .active:hover,
+.navbar menu .active:focus {
   border: 1px solid #811627;
   box-shadow: inset -7px -7px 17px white, inset 7px 7px 17px #46464626;
 }
@@ -109,8 +106,7 @@
     position: relative;
     margin: 20px 0;
     display: none;
-  }
-  .navbar menu li span {
+
     width: 90%;
     padding: 25px;
     font-size: 20px;
