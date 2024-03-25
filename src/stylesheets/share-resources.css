@@ -17,10 +17,11 @@
   position: sticky;
   top: 0;
   outline: 2px solid;
+  background: #eee;
 }
 
 .resources-table .table-fixed-header table thead th {
-  background: #eee;
+  text-align: left;
 }
 
 .resources-table .table-fixed-header table thead th,
