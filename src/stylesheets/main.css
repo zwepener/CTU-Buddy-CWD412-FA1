@@ -36,10 +36,6 @@ body {
   flex-grow: 1;
   margin: 20px;
   padding: 20px;
-
-  border: 1px solid #f7f7f7;
-  border-radius: 10px;
-  box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
 }
 
 .default-button {
