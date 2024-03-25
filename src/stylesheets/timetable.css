@@ -3,7 +3,6 @@
 .timetable {
   height: 100%;
   font-family: Arial, sans-serif;
-  margin: 0;
   background-image: url("../resources/images/timetable-bg.png");
   background-repeat: none;
 }
@@ -11,21 +10,6 @@
 .timetable section {
   padding: 60px;
   text-align: center;
-}
-
-.timetable .snowflakes {
-  display: flex;
-  align-items: center;
-}
-
-.timetable footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
 }
 
 .timetable h1,
@@ -39,6 +23,11 @@
 
 .timetable h3 {
   font-size: 36px; /* Set the font size for h2 */
+}
+
+.timetable .snowflakes {
+  display: flex;
+  align-items: center;
 }
 
 .timetable .snowflakes .snowflake {
@@ -61,6 +50,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(1) {
+  --size: 1vw;
   --left-ini: -8vw;
   --left-end: 3vw;
   left: 21vw;
@@ -114,6 +104,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(7) {
+  --size: 1vw;
   --left-ini: -1vw;
   --left-end: -4vw;
   left: 89vw;
@@ -122,6 +113,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(8) {
+  --size: 1vw;
   --left-ini: -4vw;
   --left-end: -7vw;
   left: 33vw;
@@ -130,6 +122,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(9) {
+  --size: 1vw;
   --left-ini: -4vw;
   --left-end: -4vw;
   left: 78vw;
@@ -183,6 +176,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(15) {
+  --size: 1vw;
   --left-ini: 9vw;
   --left-end: 4vw;
   left: 48vw;
@@ -209,6 +203,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(18) {
+  --size: 1vw;
   --left-ini: -5vw;
   --left-end: 2vw;
   left: 21vw;
@@ -235,6 +230,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(21) {
+  --size: 1vw;
   --left-ini: 5vw;
   --left-end: -9vw;
   left: 50vw;
@@ -279,6 +275,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(26) {
+  --size: 1vw;
   --left-ini: -4vw;
   --left-end: 3vw;
   left: 72vw;
@@ -305,6 +302,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(29) {
+  --size: 1vw;
   --left-ini: 9vw;
   --left-end: 8vw;
   left: 61vw;
@@ -313,6 +311,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(30) {
+  --size: 1vw;
   --left-ini: -4vw;
   --left-end: -1vw;
   left: 59vw;
@@ -321,6 +320,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(31) {
+  --size: 1vw;
   --left-ini: 2vw;
   --left-end: -3vw;
   left: 54vw;
@@ -329,6 +329,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(32) {
+  --size: 1vw;
   --left-ini: -4vw;
   --left-end: -2vw;
   left: 82vw;
@@ -355,6 +356,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(35) {
+  --size: 1vw;
   --left-ini: -9vw;
   --left-end: 6vw;
   left: 40vw;
@@ -381,6 +383,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(38) {
+  --size: 1vw;
   --left-ini: -8vw;
   --left-end: -8vw;
   left: 9vw;
@@ -479,6 +482,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(49) {
+  --size: 1vw;
   --left-ini: 3vw;
   --left-end: 8vw;
   left: 24vw;
@@ -487,6 +491,7 @@
 }
 
 .timetable .snowflakes .snowflake:nth-child(50) {
+  --size: 1vw;
   --left-ini: 7vw;
   --left-end: -8vw;
   left: 69vw;
@@ -495,7 +500,6 @@
 }
 
 /* added small blur every 6 snowflakes*/
-
 .timetable .snowflakes .snowflake:nth-child(6n) {
   filter: blur(1px);
 }
