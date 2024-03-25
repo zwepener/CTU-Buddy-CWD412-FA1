@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.timetable .container {
+.timetable .snowflakes {
   display: flex;
   align-items: center;
 }
@@ -35,7 +35,8 @@
 .timetable h3 {
   font-size: 36px; /* Set the font size for h2 */
 }
-.timetable .container .snowflake {
+
+.timetable .snowflakes .snowflake {
   --size: 1vw;
   width: var(--size);
   height: var(--size);
@@ -54,8 +55,7 @@
   }
 }
 
-.timetable .container .snowflake:nth-child(1) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(1) {
   --left-ini: -8vw;
   --left-end: 3vw;
   left: 21vw;
@@ -63,7 +63,7 @@
   animation-delay: -10s;
 }
 
-.timetable .container .snowflake:nth-child(2) {
+.timetable .snowflakes .snowflake:nth-child(2) {
   --size: 0.6vw;
   --left-ini: 2vw;
   --left-end: 10vw;
@@ -72,7 +72,7 @@
   animation-delay: -9s;
 }
 
-.timetable .container .snowflake:nth-child(3) {
+.timetable .snowflakes .snowflake:nth-child(3) {
   --size: 0.8vw;
   --left-ini: -5vw;
   --left-end: -7vw;
@@ -81,7 +81,7 @@
   animation-delay: -1s;
 }
 
-.timetable .container .snowflake:nth-child(4) {
+.timetable .snowflakes .snowflake:nth-child(4) {
   --size: 0.2vw;
   --left-ini: -1vw;
   --left-end: -9vw;
@@ -90,7 +90,7 @@
   animation-delay: -9s;
 }
 
-.timetable .container .snowflake:nth-child(5) {
+.timetable .snowflakes .snowflake:nth-child(5) {
   --size: 0.2vw;
   --left-ini: 9vw;
   --left-end: -1vw;
@@ -99,7 +99,7 @@
   animation-delay: -3s;
 }
 
-.timetable .container .snowflake:nth-child(6) {
+.timetable .snowflakes .snowflake:nth-child(6) {
   --size: 0.8vw;
   --left-ini: 3vw;
   --left-end: -6vw;
@@ -108,8 +108,7 @@
   animation-delay: -1s;
 }
 
-.timetable .container .snowflake:nth-child(7) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(7) {
   --left-ini: -1vw;
   --left-end: -4vw;
   left: 89vw;
@@ -117,8 +116,7 @@
   animation-delay: -8s;
 }
 
-.timetable .container .snowflake:nth-child(8) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(8) {
   --left-ini: -4vw;
   --left-end: -7vw;
   left: 33vw;
@@ -126,8 +124,7 @@
   animation-delay: -2s;
 }
 
-.timetable .container .snowflake:nth-child(9) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(9) {
   --left-ini: -4vw;
   --left-end: -4vw;
   left: 78vw;
@@ -135,7 +132,7 @@
   animation-delay: -5s;
 }
 
-.timetable .container .snowflake:nth-child(10) {
+.timetable .snowflakes .snowflake:nth-child(10) {
   --size: 0.6vw;
   --left-ini: -3vw;
   --left-end: 1vw;
@@ -144,7 +141,7 @@
   animation-delay: -7s;
 }
 
-.timetable .container .snowflake:nth-child(11) {
+.timetable .snowflakes .snowflake:nth-child(11) {
   --size: 0.4vw;
   --left-ini: 6vw;
   --left-end: -1vw;
@@ -153,7 +150,7 @@
   animation-delay: -8s;
 }
 
-.timetable .container .snowflake:nth-child(12) {
+.timetable .snowflakes .snowflake:nth-child(12) {
   --size: 0.4vw;
   --left-ini: -1vw;
   --left-end: 1vw;
@@ -162,7 +159,7 @@
   animation-delay: -10s;
 }
 
-.timetable .container .snowflake:nth-child(13) {
+.timetable .snowflakes .snowflake:nth-child(13) {
   --size: 0.8vw;
   --left-ini: 5vw;
   --left-end: 0vw;
@@ -171,7 +168,7 @@
   animation-delay: -5s;
 }
 
-.timetable .container .snowflake:nth-child(14) {
+.timetable .snowflakes .snowflake:nth-child(14) {
   --size: 0.8vw;
   --left-ini: 0vw;
   --left-end: -8vw;
@@ -180,8 +177,7 @@
   animation-delay: -5s;
 }
 
-.timetable .container .snowflake:nth-child(15) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(15) {
   --left-ini: 9vw;
   --left-end: 4vw;
   left: 48vw;
@@ -189,7 +185,7 @@
   animation-delay: -5s;
 }
 
-.timetable .container .snowflake:nth-child(16) {
+.timetable .snowflakes .snowflake:nth-child(16) {
   --size: 0.6vw;
   --left-ini: -2vw;
   --left-end: 6vw;
@@ -198,7 +194,7 @@
   animation-delay: -3s;
 }
 
-.timetable .container .snowflake:nth-child(17) {
+.timetable .snowflakes .snowflake:nth-child(17) {
   --size: 0.8vw;
   --left-ini: -5vw;
   --left-end: -5vw;
@@ -207,8 +203,7 @@
   animation-delay: -4s;
 }
 
-.timetable .container .snowflake:nth-child(18) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(18) {
   --left-ini: -5vw;
   --left-end: 2vw;
   left: 21vw;
@@ -216,7 +211,7 @@
   animation-delay: -5s;
 }
 
-.timetable .container .snowflake:nth-child(19) {
+.timetable .snowflakes .snowflake:nth-child(19) {
   --size: 0.6vw;
   --left-ini: -6vw;
   --left-end: 0vw;
@@ -225,7 +220,7 @@
   animation-delay: -5s;
 }
 
-.timetable .container .snowflake:nth-child(20) {
+.timetable .snowflakes .snowflake:nth-child(20) {
   --size: 0.8vw;
   --left-ini: 7vw;
   --left-end: -5vw;
@@ -234,8 +229,7 @@
   animation-delay: -4s;
 }
 
-.timetable .container .snowflake:nth-child(21) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(21) {
   --left-ini: 5vw;
   --left-end: -9vw;
   left: 50vw;
@@ -243,7 +237,7 @@
   animation-delay: -2s;
 }
 
-.timetable .container .snowflake:nth-child(22) {
+.timetable .snowflakes .snowflake:nth-child(22) {
   --size: 0.8vw;
   --left-ini: 3vw;
   --left-end: 5vw;
@@ -252,7 +246,7 @@
   animation-delay: -8s;
 }
 
-.timetable .container .snowflake:nth-child(23) {
+.timetable .snowflakes .snowflake:nth-child(23) {
   --size: 0.2vw;
   --left-ini: -1vw;
   --left-end: 5vw;
@@ -261,7 +255,7 @@
   animation-delay: -2s;
 }
 
-.timetable .container .snowflake:nth-child(24) {
+.timetable .snowflakes .snowflake:nth-child(24) {
   --size: 0.2vw;
   --left-ini: -8vw;
   --left-end: -9vw;
@@ -270,7 +264,7 @@
   animation-delay: -9s;
 }
 
-.timetable .container .snowflake:nth-child(25) {
+.timetable .snowflakes .snowflake:nth-child(25) {
   --size: 0.2vw;
   --left-ini: -6vw;
   --left-end: 0vw;
@@ -279,8 +273,7 @@
   animation-delay: -3s;
 }
 
-.timetable .container .snowflake:nth-child(26) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(26) {
   --left-ini: -4vw;
   --left-end: 3vw;
   left: 72vw;
@@ -288,7 +281,7 @@
   animation-delay: -3s;
 }
 
-.timetable .container .snowflake:nth-child(27) {
+.timetable .snowflakes .snowflake:nth-child(27) {
   --size: 0.8vw;
   --left-ini: -1vw;
   --left-end: 0vw;
@@ -297,7 +290,7 @@
   animation-delay: -1s;
 }
 
-.timetable .container .snowflake:nth-child(28) {
+.timetable .snowflakes .snowflake:nth-child(28) {
   --size: 0.2vw;
   --left-ini: 8vw;
   --left-end: -5vw;
@@ -306,8 +299,7 @@
   animation-delay: -5s;
 }
 
-.timetable .container .snowflake:nth-child(29) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(29) {
   --left-ini: 9vw;
   --left-end: 8vw;
   left: 61vw;
@@ -315,8 +307,7 @@
   animation-delay: -1s;
 }
 
-.timetable .container .snowflake:nth-child(30) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(30) {
   --left-ini: -4vw;
   --left-end: -1vw;
   left: 59vw;
@@ -324,8 +315,7 @@
   animation-delay: -10s;
 }
 
-.timetable .container .snowflake:nth-child(31) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(31) {
   --left-ini: 2vw;
   --left-end: -3vw;
   left: 54vw;
@@ -333,8 +323,7 @@
   animation-delay: -7s;
 }
 
-.timetable .container .snowflake:nth-child(32) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(32) {
   --left-ini: -4vw;
   --left-end: -2vw;
   left: 82vw;
@@ -342,7 +331,7 @@
   animation-delay: -6s;
 }
 
-.timetable .container .snowflake:nth-child(33) {
+.timetable .snowflakes .snowflake:nth-child(33) {
   --size: 0.8vw;
   --left-ini: 8vw;
   --left-end: 4vw;
@@ -351,7 +340,7 @@
   animation-delay: -2s;
 }
 
-.timetable .container .snowflake:nth-child(34) {
+.timetable .snowflakes .snowflake:nth-child(34) {
   --size: 0.8vw;
   --left-ini: -8vw;
   --left-end: -4vw;
@@ -360,8 +349,7 @@
   animation-delay: -10s;
 }
 
-.timetable .container .snowflake:nth-child(35) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(35) {
   --left-ini: -9vw;
   --left-end: 6vw;
   left: 40vw;
@@ -369,7 +357,7 @@
   animation-delay: -1s;
 }
 
-.timetable .container .snowflake:nth-child(36) {
+.timetable .snowflakes .snowflake:nth-child(36) {
   --size: 0.4vw;
   --left-ini: -6vw;
   --left-end: -6vw;
@@ -378,7 +366,7 @@
   animation-delay: -7s;
 }
 
-.timetable .container .snowflake:nth-child(37) {
+.timetable .snowflakes .snowflake:nth-child(37) {
   --size: 0.4vw;
   --left-ini: -5vw;
   --left-end: -6vw;
@@ -387,8 +375,7 @@
   animation-delay: -9s;
 }
 
-.timetable .container .snowflake:nth-child(38) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(38) {
   --left-ini: -8vw;
   --left-end: -8vw;
   left: 9vw;
@@ -396,7 +383,7 @@
   animation-delay: -6s;
 }
 
-.timetable .container .snowflake:nth-child(39) {
+.timetable .snowflakes .snowflake:nth-child(39) {
   --size: 0.6vw;
   --left-ini: 5vw;
   --left-end: 3vw;
@@ -405,7 +392,7 @@
   animation-delay: -3s;
 }
 
-.timetable .container .snowflake:nth-child(40) {
+.timetable .snowflakes .snowflake:nth-child(40) {
   --size: 0.6vw;
   --left-ini: -2vw;
   --left-end: 1vw;
@@ -414,7 +401,7 @@
   animation-delay: -3s;
 }
 
-.timetable .container .snowflake:nth-child(41) {
+.timetable .snowflakes .snowflake:nth-child(41) {
   --size: 0.6vw;
   --left-ini: -1vw;
   --left-end: -8vw;
@@ -423,7 +410,7 @@
   animation-delay: -9s;
 }
 
-.timetable .container .snowflake:nth-child(42) {
+.timetable .snowflakes .snowflake:nth-child(42) {
   --size: 0.2vw;
   --left-ini: -4vw;
   --left-end: 3vw;
@@ -432,7 +419,7 @@
   animation-delay: -10s;
 }
 
-.timetable .container .snowflake:nth-child(43) {
+.timetable .snowflakes .snowflake:nth-child(43) {
   --size: 0.4vw;
   --left-ini: -2vw;
   --left-end: 4vw;
@@ -441,7 +428,7 @@
   animation-delay: -3s;
 }
 
-.timetable .container .snowflake:nth-child(44) {
+.timetable .snowflakes .snowflake:nth-child(44) {
   --size: 0.8vw;
   --left-ini: 6vw;
   --left-end: -3vw;
@@ -450,7 +437,7 @@
   animation-delay: -9s;
 }
 
-.timetable .container .snowflake:nth-child(45) {
+.timetable .snowflakes .snowflake:nth-child(45) {
   --size: 0.6vw;
   --left-ini: -5vw;
   --left-end: -7vw;
@@ -459,7 +446,7 @@
   animation-delay: -7s;
 }
 
-.timetable .container .snowflake:nth-child(46) {
+.timetable .snowflakes .snowflake:nth-child(46) {
   --size: 0.2vw;
   --left-ini: -4vw;
   --left-end: -9vw;
@@ -468,7 +455,7 @@
   animation-delay: -7s;
 }
 
-.timetable .container .snowflake:nth-child(47) {
+.timetable .snowflakes .snowflake:nth-child(47) {
   --size: 0.2vw;
   --left-ini: -4vw;
   --left-end: -2vw;
@@ -477,7 +464,7 @@
   animation-delay: -8s;
 }
 
-.timetable .container .snowflake:nth-child(48) {
+.timetable .snowflakes .snowflake:nth-child(48) {
   --size: 0.6vw;
   --left-ini: 8vw;
   --left-end: -8vw;
@@ -486,8 +473,7 @@
   animation-delay: -10s;
 }
 
-.timetable .container .snowflake:nth-child(49) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(49) {
   --left-ini: 3vw;
   --left-end: 8vw;
   left: 24vw;
@@ -495,8 +481,7 @@
   animation-delay: -9s;
 }
 
-.timetable .container .snowflake:nth-child(50) {
-  --size: 1vw;
+.timetable .snowflakes .snowflake:nth-child(50) {
   --left-ini: 7vw;
   --left-end: -8vw;
   left: 69vw;
@@ -506,6 +491,6 @@
 
 /* added small blur every 6 snowflakes*/
 
-.timetable .container .snowflake:nth-child(6n) {
+.timetable .snowflakes .snowflake:nth-child(6n) {
   filter: blur(1px);
 }
