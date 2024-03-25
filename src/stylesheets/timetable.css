@@ -2,7 +2,6 @@
 
 .timetable {
   height: 100%;
-  font-family: Arial, sans-serif;
   background-image: url("../resources/images/timetable-bg.png");
   background-repeat: none;
 }
