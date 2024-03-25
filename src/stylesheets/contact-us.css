@@ -14,9 +14,6 @@
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #f7f7f7;
-  border-radius: 10px;
-  box-shadow: -7px -7px 17px white, 7px 7px 17px #46464626;
 }
 
 .content .feedback-form .form-box form .form-field {
@@ -52,11 +49,14 @@
   margin-left: 10px;
 }
 
+.content .feedback-form .form-box form .form-field textarea {
+  border: none;
+  border-radius: 10px;
+}
+
 .content .feedback-form .form-box form .form-field textarea,
 .content .feedback-form .form-box form #submit {
   width: 100%;
-  border: none;
-  border-radius: 10px;
 }
 
 .content .feedback-form .form-box form textarea {
@@ -66,10 +66,4 @@
 
 .content .feedback-form .form-box form textarea:focus {
   outline: solid 1px #811627;
-}
-
-.content .feedback-form .form-box form #submit {
-  color: white;
-  padding: 8px 12px;
-  background-color: #811627;
 }
