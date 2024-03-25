@@ -8,8 +8,12 @@
 }
 
 .timetable section {
-  padding: 60px;
+  padding: 4vi;
   text-align: center;
+}
+
+.timetable section img {
+  width: 75%;
 }
 
 .timetable h1,
