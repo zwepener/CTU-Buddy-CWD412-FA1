@@ -3,20 +3,14 @@ main {
   padding: 20px;
 }
 
-.image-container {
-  display: flex;
-  justify-content: center;
+.image-container section {
+  text-align: center;
 }
 
 .image-container img {
-  max-width: 200%; /* Ensures the image doesn't exceed its container's width */
-  height: auto; /* Maintains the aspect ratio of the image */
-  border-radius: 10px; /* Adds rounded corners to the image */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+  width: 50vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -ms-zoom-animation: default;
-}
-
-/* Adjust the styling for the second image if needed */
-.image-container img:nth-child(2) {
-  margin-left: 20px; /* Adds some spacing between the two images */
 }
