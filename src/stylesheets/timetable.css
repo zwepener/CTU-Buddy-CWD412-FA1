@@ -636,10 +636,6 @@
 
 /* Adjustments for smaller screens */
 @media screen and (max-width: 767px) {
-  .content {
-    flex-direction: column;
-  }
-
   #timetable-image,
   #text-container {
     width: 100%;
