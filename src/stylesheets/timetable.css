@@ -510,145 +510,140 @@
 /* Start Profession Title Animation */
 
 @keyframes chng-width {
+  0% {
+    width: 115px;
+  }
+
+  25% {
+    width: 0;
+  }
+
+  50% {
+    width: 115px;
+  }
+}
+
+@keyframes chng-opacity-des {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+}
+
+@keyframes chng-opacity-dev {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0;
+  }
+}
+
+.profession-title p,
+.profession-title div {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.profession-title .parent {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 115px;
+  height: 32px;
+  overflow: hidden;
+  animation: chng-width 2.5s ease-in-out 2s infinite;
+  border-right: 1px solid #fff;
+}
+
+.profession-title .parent span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profession-title .parent .des {
+  animation: chng-opacity-des 5s ease-in-out 2.5s infinite;
+}
+
+.profession-title .parent .dev {
+  opacity: 0;
+  animation: chng-opacity-dev 5s ease-in-out 2.5s infinite;
+}
+
+/* End the Profession Title Animation */
+@media screen and (max-width: 767px) {
+  .header .profession-title .parent {
+    height: 24px;
+    width: 80px;
+    animation: chng-width 2.5s ease-in-out 2s infinite;
+  }
+
+  .header .profession-title p,
+  .header .profession-title span {
+    font-size: 18px;
+  }
+
+  @keyframes chng-width {
     0% {
-      width: 115px;
+      width: 80px;
     }
-  
+
     25% {
       width: 0;
     }
-  
+
     50% {
-      width: 115px;
-    }
-  }
-  
-  @keyframes chng-opacity-des {
-    0% {
-      opacity: 0;
-    }
-  
-    25% {
-      opacity: 0;
-    }
-  
-    50% {
-      opacity: 0;
-    }
-  
-    60% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes chng-opacity-dev {
-    0% {
-      opacity: 1;
-    }
-  
-    25% {
-      opacity: 1;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    65% {
-      opacity: 0;
-    }
-  }
-  
-  .profession-title p,
-  .profession-title div {
-    display: inline-block;
-    font-size: 26px;
-    font-weight: 300;
-  }
-  
-  .profession-title .parent {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 115px;
-    height: 32px;
-    overflow: hidden;
-    animation: chng-width 2.5s ease-in-out 2s infinite;
-    border-right: 1px solid #FFF;
-  }
-  
-  .profession-title .parent span {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .profession-title .parent .des {
-    animation: chng-opacity-des 5s ease-in-out 2.5s infinite;
-  }
-  
-  .profession-title .parent .dev {
-    opacity: 0;
-    animation: chng-opacity-dev 5s ease-in-out 2.5s infinite;
-  }
-  
-  /* End the Profession Title Animation */
-  @media screen and (max-width: 767px) {
-    
-    .header .profession-title .parent {
-      height: 24px;
       width: 80px;
-      animation: chng-width 2.5s ease-in-out 2s infinite;
-    }
-  
-    .header .profession-title p,
-    .header .profession-title span {
-      font-size: 18px;
-    }
-  
-    @keyframes chng-width {
-      0% {
-        width: 80px;
-      }
-  
-      25% {
-        width: 0;
-      }
-  
-      50% {
-        width: 80px;
-      }
     }
   }
+}
+
+/* Styles for the timetable image */
+#timetable-image {
+  width: 50%;
+  height: auto;
+}
+
+/* Styles for the text alongside the timetable image */
+#text-container {
+  width: 50%;
+  padding: 100px 60px 60px 180px;
+  color: rgb(2, 1, 9); /* Change the color to your desired color */
+  font-size: 40px; /* Increase the font size to your desired value */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 767px) {
   .content {
-              display: flex;
-              align-items: center;
-          }
-  
-          /* Styles for the timetable image */
-          #timetable-image {
-              width: 50%;
-              height: auto;
-          }
-  
-          /* Styles for the text alongside the timetable image */
-          #text-container {
-              width: 50%;
-              padding: 100px 60px 60px 180px;
-              color: rgb(2, 1, 9); /* Change the color to your desired color */
-              font-size: 40px; /* Increase the font size to your desired value */
-  
-          }
-  
-          /* Adjustments for smaller screens */
-          @media screen and (max-width: 767px) {
-              .content {
-                  flex-direction: column;
-              }
-  
-              #timetable-image, #text-container {
-                  width: 100%;
-              }
-          }
-  
-  /* End Profession Title Animation */
+    flex-direction: column;
+  }
+
+  #timetable-image,
+  #text-container {
+    width: 100%;
+  }
+}
+
+/* End Profession Title Animation */
