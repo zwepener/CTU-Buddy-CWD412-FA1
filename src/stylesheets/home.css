@@ -1,13 +1,10 @@
 /* Basic styling */
-main {
-  padding: 20px;
-}
 
-.image-container section {
+.home-container #welcome .image-container {
   text-align: center;
 }
 
-.image-container img {
+.home-container #welcome .image-container img {
   width: 50vw;
   height: auto;
   border-radius: 10px;
