@@ -1,7 +1,8 @@
 <div class="discussion-container">
   <!-- User profile section -->
   <div class="user-profile">
-    <!-- User information here -->
+    <img class="user-profile-pic" src="#" alt="" />
+    <span class="user-display-name">&lt;User Display Name&gt;</span>
   </div>
 
   <!-- New post form -->
@@ -9,32 +10,124 @@
     <textarea
       class="default-textarea post-content"
       placeholder="What is on your mind?"
+      required
     ></textarea>
     <button type="submit" class="default-button">
-      <i class="fa-solid fa-plus"></i>&nbsp;Post
+      <i class="fa-solid fa-plus"></i>
+      Post
     </button>
   </form>
 
-  <!-- Threaded discussion posts -->
-  <div class="post">
-    <p>&lt;Placeholder Post Content&gt;</p>
-    <!-- Nested reply -->
-    <div class="thread">
-      <div class="post">
-        <p>&lt;Placeholder Reply Content&gt;</p>
+  <!-- Posts Container -->
+  <div class="posts">
+    <div class="post">
+      <div class="user-profile">
+        <img class="user-profile-pic" src="#" alt="" />
+        <span class="user-display-name">&lt;Poster Display Name&gt;</span>
       </div>
-      <form class="post-form reply-post">
-        <textarea
-          class="default-textarea post-content"
-          placeholder="Reply in this thread"
-        ></textarea>
-        <button type="submit" class="default-button">
-          <i class="fa-solid fa-reply"></i>&nbsp;Reply
-        </button>
-      </form>
+      <p>&lt;Post Content&gt;</p>
+      <!-- Nested reply -->
+      <div class="thread">
+        <div class="post">
+          <div class="user-profile">
+            <img class="user-profile-pic" src="#" alt="" />
+            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+          </div>
+          <p>&lt;Reply Content&gt;</p>
+        </div>
+        <form class="post-form reply-post">
+          <textarea
+            class="default-textarea post-content"
+            placeholder="Reply in this thread"
+            required
+          ></textarea>
+          <button type="submit" class="default-button">
+            <i class="fa-solid fa-reply"></i>
+            Reply
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="post">
+      <div class="user-profile">
+        <img class="user-profile-pic" src="#" alt="" />
+        <span class="user-display-name">&lt;Poster Display Name&gt;</span>
+      </div>
+      <p>&lt;Post Content&gt;</p>
+      <!-- Nested reply -->
+      <div class="thread">
+        <div class="post">
+          <div class="user-profile">
+            <img class="user-profile-pic" src="#" alt="" />
+            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+          </div>
+          <p>&lt;Reply Content&gt;</p>
+        </div>
+        <div class="post">
+          <div class="user-profile">
+            <img class="user-profile-pic" src="#" alt="" />
+            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+          </div>
+          <p>&lt;Reply Content&gt;</p>
+        </div>
+        <form class="post-form reply-post">
+          <textarea
+            class="default-textarea post-content"
+            placeholder="Reply in this thread"
+            required
+          ></textarea>
+          <button type="submit" class="default-button">
+            <i class="fa-solid fa-reply"></i>
+            Reply
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="post">
+      <div class="user-profile">
+        <img class="user-profile-pic" src="#" />
+        <span class="user-display-name">&lt;Poster Display Name&gt;</span>
+      </div>
+      <p>&lt;Post Content&gt;</p>
+      <!-- Nested reply -->
+      <div class="thread">
+        <div class="post">
+          <div class="user-profile">
+            <img class="user-profile-pic" src="#" />
+            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+          </div>
+          <p>&lt;Reply Content&gt;</p>
+        </div>
+        <div class="post">
+          <div class="user-profile">
+            <img class="user-profile-pic" src="#" />
+            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+          </div>
+          <p>&lt;Reply Content&gt;</p>
+        </div>
+        <div class="post">
+          <div class="user-profile">
+            <img class="user-profile-pic" src="#" />
+            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+          </div>
+          <p>&lt;Reply Content&gt;</p>
+        </div>
+        <form class="post-form reply-post">
+          <textarea
+            class="default-textarea post-content"
+            placeholder="Reply in this thread"
+            required
+          ></textarea>
+          <button type="submit" class="default-button">
+            <i class="fa-solid fa-reply"></i>
+            Reply
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
 <script>
   document.querySelectorAll(".post-form").forEach((form) => {
     form.addEventListener("submit", (event) => {
