@@ -5,28 +5,44 @@
   </div>
 
   <!-- New post form -->
-  <form id="new-post-form">
-    <textarea id="post-content" placeholder="What's your question?"></textarea>
-    <button type="submit" class="default-button">Post</button>
+  <form class="post-form new-post">
+    <textarea
+      class="post-content"
+      placeholder="What is on your mind?"
+    ></textarea>
+    <button type="submit" class="default-button">
+      <i class="fa-solid fa-plus"></i>&nbsp;Post
+    </button>
   </form>
 
   <!-- Threaded discussion posts -->
   <div class="post">
-    <p>Original Post Content</p>
+    <p>&lt;Placeholder Post Content&gt;</p>
     <!-- Nested reply -->
     <div class="thread">
       <div class="post">
-        <p>Reply Content</p>
+        <p>&lt;Placeholder Reply Content&gt;</p>
       </div>
+      <form class="post-form reply-post">
+        <textarea
+          class="post-content"
+          placeholder="Reply in this thread"
+        ></textarea>
+        <button type="submit" class="default-button">
+          <i class="fa-solid fa-reply"></i>&nbsp;Reply
+        </button>
+      </form>
     </div>
   </div>
 </div>
 <script>
-  document
-    .getElementById("new-post-form")
-    .addEventListener("submit", function (event) {
+  document.querySelectorAll(".post-form").forEach((form) => {
+    form.addEventListener("submit", (event) => {
       event.preventDefault();
-      var postContent = document.getElementById("post-content").value;
-      // Code to handle the new post submission
+      /*
+      var postContent = form.querySelector(".post-content").value;
+      */
+      defaultAlert();
     });
+  });
 </script>

@@ -35,17 +35,17 @@ $(document).ready(() => {
   loadContent(Pages[0]);
 });
 
-function defaultClickAlert() {
+function defaultAlert() {
   alert(
-    "Due to the static nature of FA 1, no logic has been added to this element's onclick event yet."
+    "Due to the static nature of FA 1, no logic has been added to this element yet."
   );
 }
 
 // For "Share Resources" Page
 function uploadClick() {
-  defaultClickAlert();
+  defaultAlert();
 }
 
 function downloadClick() {
-  defaultClickAlert();
+  defaultAlert();
 }
