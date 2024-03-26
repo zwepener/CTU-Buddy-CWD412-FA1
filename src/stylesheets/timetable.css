@@ -1,14 +1,12 @@
-/* COMMENT FROM ZANDRE: I removed a bunch of redundant styling here. Please do not add them back. */
-
 .timetable {
   height: 100%;
   background-image: url("../resources/images/timetable-bg.png");
   background-repeat: none;
+  text-align: center;
 }
 
-.timetable section {
-  padding: 4vi;
-  text-align: center;
+.timetable h3 {
+  font-size: 5vw;
 }
 
 .timetable section img {
@@ -16,17 +14,40 @@
   height: auto;
 }
 
-.timetable h1,
-.timetable h3 {
-  color: white;
+.timetable section .typewriter h1 {
+  --width: 300px;
+  width: var(--width);
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end) infinite,
+    blink-caret 0.75s step-end infinite;
 }
 
-.timetable h1 {
-  font-size: 40px; /* Set the font size for h1 */
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: var(--width);
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: var(--width);
+  }
 }
 
-.timetable h3 {
-  font-size: 36px; /* Set the font size for h2 */
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .timetable .snowflakes {
@@ -507,132 +528,3 @@
 .timetable .snowflakes .snowflake:nth-child(6n) {
   filter: blur(1px);
 }
-/* Start Profession Title Animation */
-
-@keyframes chng-width {
-  0% {
-    width: 115px;
-  }
-
-  25% {
-    width: 0;
-  }
-
-  50% {
-    width: 115px;
-  }
-}
-
-@keyframes chng-opacity-des {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  60% {
-    opacity: 1;
-  }
-}
-
-@keyframes chng-opacity-dev {
-  0% {
-    opacity: 1;
-  }
-
-  25% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  65% {
-    opacity: 0;
-  }
-}
-
-.timetable .profession-title p,
-.timetable .profession-title div {
-  display: inline-block;
-  font-size: 26px;
-  font-weight: 300;
-}
-
-.timetable .profession-title .parent {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 115px;
-  height: 32px;
-  overflow: hidden;
-  animation: chng-width 2.5s ease-in-out 2s infinite;
-  border-right: 1px solid #fff;
-}
-
-.timetable .profession-title .parent span {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.timetable .profession-title .parent .des {
-  animation: chng-opacity-des 5s ease-in-out 2.5s infinite;
-}
-
-.timetable .profession-title .parent .dev {
-  opacity: 0;
-  animation: chng-opacity-dev 5s ease-in-out 2.5s infinite;
-}
-
-/* End the Profession Title Animation */
-@media screen and (max-width: 767px) {
-  .timetable .header .profession-title .parent {
-    height: 24px;
-    width: 80px;
-    animation: chng-width 2.5s ease-in-out 2s infinite;
-  }
-
-  .timetable .header .profession-title p,
-  .timetable .header .profession-title span {
-    font-size: 18px;
-  }
-
-  @keyframes chng-width {
-    0% {
-      width: 80px;
-    }
-
-    25% {
-      width: 0;
-    }
-
-    50% {
-      width: 80px;
-    }
-  }
-}
-
-/* Styles for the text alongside the timetable image */
-.timetable #text-container {
-  width: 50%;
-  padding: 100px 60px 60px 180px;
-  color: rgb(2, 1, 9); /* Change the color to your desired color */
-  font-size: 40px; /* Increase the font size to your desired value */
-}
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 767px) {
-  .timetable #text-container {
-    width: 100%;
-  }
-}
-
-/* End Profession Title Animation */
