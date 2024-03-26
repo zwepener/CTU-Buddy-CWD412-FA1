@@ -48,3 +48,10 @@ function uploadClick() {
 function downloadClick() {
   defaultClickAlert();
 }
+
+// For "Duscussion" Page
+document.getElementById('new-post-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var postContent = document.getElementById('post-content').value;
+  // Code to handle the new post submission
+});

@@ -1,1 +1,3 @@
-/* Remove this comment and start styling the "Discussions" page */
+.discussion-container { margin: 20px; }
+.post { margin-bottom: 15px; border: 1px solid #ccc; padding: 10px; }
+.thread { margin-left: 20px; }
