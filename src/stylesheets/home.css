@@ -1,1 +1,13 @@
-/* Remove this comment and start styling the "Home" page */
+/* Basic styling */
+
+.home-container #welcome .image-container {
+  text-align: center;
+}
+
+.home-container #welcome .image-container img {
+  width: 50vw;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -ms-zoom-animation: default;
+}
