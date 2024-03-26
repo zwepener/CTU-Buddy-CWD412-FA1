@@ -1,3 +1,11 @@
-.discussion-container { margin: 20px; }
-.post { margin-bottom: 15px; border: 1px solid #ccc; padding: 10px; }
-.thread { margin-left: 20px; }
+.discussion-container {
+  margin: 20px;
+}
+.discussion-container .post {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.discussion-container .post .thread {
+  margin-left: 20px;
+}
