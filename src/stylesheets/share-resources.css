@@ -33,6 +33,16 @@
   background-color: whitesmoke;
 }
 
+.resources-table .table-fixed-header table tbody tr td {
+  vertical-align: top;
+}
+
+.resources-table .table-fixed-header table tbody tr td a {
+  position: relative;
+  text-decoration: none;
+  font-size: 13px;
+}
+
 .resources-table .buttons {
   margin-top: 10px;
   text-align: center;

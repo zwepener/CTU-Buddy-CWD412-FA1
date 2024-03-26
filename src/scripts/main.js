@@ -45,7 +45,3 @@ function defaultAlert() {
 function uploadClick() {
   defaultAlert();
 }
-
-function downloadClick() {
-  defaultAlert();
-}

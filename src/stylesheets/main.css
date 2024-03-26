@@ -57,3 +57,7 @@ body {
   border-radius: 10px;
   background-color: #811627;
 }
+
+.default-button:hover {
+  cursor: pointer;
+}
