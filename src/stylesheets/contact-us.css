@@ -49,21 +49,7 @@
   margin-left: 10px;
 }
 
-.content .feedback-form .form-box form .form-field textarea {
-  border: none;
-  border-radius: 10px;
-}
-
 .content .feedback-form .form-box form .form-field textarea,
 .content .feedback-form .form-box form #submit {
   width: 100%;
-}
-
-.content .feedback-form .form-box form textarea {
-  resize: none;
-  padding: 5px;
-}
-
-.content .feedback-form .form-box form textarea:focus {
-  outline: solid 1px #811627;
 }

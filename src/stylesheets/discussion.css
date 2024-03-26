@@ -11,15 +11,6 @@
 
 .discussion-container .post-form textarea {
   margin-right: 10px;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  padding: 5px;
-  resize: none;
-}
-
-.discussion-container .post-form textarea:focus {
-  outline: 1px solid #811627;
 }
 
 .discussion-container .post {

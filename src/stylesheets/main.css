@@ -39,6 +39,17 @@ body {
   padding: 20px;
 }
 
+.default-textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  padding: 5px;
+}
+
+.default-textarea:focus {
+  outline: solid 1px #811627;
+}
+
 .default-button {
   color: white;
   padding: 8px 12px;
