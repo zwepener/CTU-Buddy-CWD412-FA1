@@ -12,7 +12,8 @@
 }
 
 .timetable section img {
-  width: 75%;
+  width: 70vw;
+  height: auto;
 }
 
 .timetable h1,
