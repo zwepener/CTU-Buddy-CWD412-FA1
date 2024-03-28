@@ -32,14 +32,13 @@
 .navbar .container .bar {
   position: relative;
   display: none;
+  margin-left: 20px;
 }
 
 .navbar .container .bar span {
   color: #811627;
-  height: 65px;
-  line-height: 65px;
-  width: 65px;
-  font-size: 35px;
+  padding: 8px 12px;
+  font-size: 36px;
   text-align: center;
   border: 1px solid #f7f7f7;
   border-radius: 10px;
@@ -93,7 +92,7 @@
 
 /*This part is so that the website will still look good on smaller screens.*/
 @media screen and (max-width: 1219px) {
-  /*When screen width is smaller than or equal to 1104px, the following styling will be applied...*/
+  /*When screen width is smaller than or equal to 1219px, the following styling will be applied...*/
   .navbar {
     display: table;
   }

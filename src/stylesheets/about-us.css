@@ -1,1 +1,45 @@
-/* Remove this comment and start styling the "About Us" page */
+.about-us-container {
+  text-align: center;
+}
+
+.about-us-container .image-container img {
+    max-width: 286px;
+    width: 100%;
+    height: auto;
+}
+
+.about-us-container .image-container img,
+.about-us-container hr {
+    margin: 20px 0
+}
+
+.about-us-container #git-repo {
+  border-radius: 100px;
+  padding: 4px 6px;
+  font-family: "Roboto", "Arial", sans-serif;;
+  color: white;
+  text-decoration: none;
+  background-color: #272727;
+}
+
+.about-us-container .profile {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  min-height: 140px;
+  border-radius: 70px;
+  font-size: 21px;
+  margin: 20px 0;
+}
+
+.about-us-container .profile img {
+  --img-size: 140px;
+  width: var(--img-size);
+  height: var(--img-size);
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.about-us-container .profile-details p {
+  margin-left: 20px;
+}
