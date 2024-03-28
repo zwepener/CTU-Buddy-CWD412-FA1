@@ -92,7 +92,7 @@
 }
 
 /*This part is so that the website will still look good on smaller screens.*/
-@media screen and (max-width: 1104px) {
+@media screen and (max-width: 1219px) {
   /*When screen width is smaller than or equal to 1104px, the following styling will be applied...*/
   .navbar {
     display: table;
