@@ -3,23 +3,59 @@
 }
 
 .about-us-container .image-container img {
-    max-width: 286px;
-    width: 100%;
-    height: auto;
+  max-width: 286px;
+  width: 100%;
+  height: auto;
 }
 
 .about-us-container .image-container img,
 .about-us-container hr {
-    margin: 20px 0
+  margin: 20px 0;
 }
 
 .about-us-container #git-repo {
+  display: inline-block;
   border-radius: 100px;
-  padding: 4px 6px;
-  font-family: "Roboto", "Arial", sans-serif;;
+  padding: 1px 6px;
   color: white;
   text-decoration: none;
   background-color: #272727;
+}
+
+@keyframes collapse-git {
+  from {
+    width: var(--final-width);
+  }
+  to {
+    width: 0;
+  }
+}
+
+.about-us-container #git-repo span {
+  font-family: "Roboto", "Arial", sans-serif;
+  --final-width: 194px;
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: collapse-git 0.3s forwards;
+}
+
+@keyframes expand-git {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--final-width);
+  }
+}
+
+.about-us-container #git-repo:hover span {
+  animation: expand-git 0.3s forwards;
+}
+
+.about-us-container #git-repo + p {
+    margin-top: 20px;
 }
 
 .about-us-container .profile {
