@@ -62,10 +62,11 @@
   text-align: left;
   display: flex;
   align-items: center;
-  min-height: 140px;
+  max-height: 140px;
   border-radius: 70px;
-  font-size: 21px;
+  font-size: 1.75vh;
   margin: 20px 0;
+  padding-right: 60px;
 }
 
 .about-us-container .profile img {
@@ -76,6 +77,6 @@
   margin-right: 30px;
 }
 
-.about-us-container .profile-details p {
+.about-us-container .profile-details ul {
   margin-left: 20px;
 }
