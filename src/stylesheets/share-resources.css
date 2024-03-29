@@ -1,18 +1,18 @@
-.resources-table .table-fixed-header {
+#share-resources-container .table-fixed-header {
   display: inline-block;
   width: 100%;
   overflow-y: auto;
   max-height: 70vh;
 }
 
-.resources-table .table-fixed-header table {
+#share-resources-container .table-fixed-header table {
   border-collapse: collapse;
   position: relative;
   user-select: none;
   width: 100%;
 }
 
-.resources-table .table-fixed-header table thead {
+#share-resources-container .table-fixed-header table thead {
   color: #811627;
   position: sticky;
   top: 0;
@@ -20,30 +20,30 @@
   background: #eee;
 }
 
-.resources-table .table-fixed-header table thead th {
+#share-resources-container .table-fixed-header table thead th {
   text-align: left;
 }
 
-.resources-table .table-fixed-header table thead th,
-.resources-table .table-fixed-header table tbody tr td {
+#share-resources-container .table-fixed-header table thead th,
+#share-resources-container .table-fixed-header table tbody tr td {
   padding: 10px;
 }
 
-.resources-table .table-fixed-header table tbody tr:hover {
+#share-resources-container .table-fixed-header table tbody tr:hover {
   background-color: whitesmoke;
 }
 
-.resources-table .table-fixed-header table tbody tr td {
+#share-resources-container .table-fixed-header table tbody tr td {
   vertical-align: top;
 }
 
-.resources-table .table-fixed-header table tbody tr td a {
+#share-resources-container .table-fixed-header table tbody tr td a {
   position: relative;
   text-decoration: none;
   font-size: 13px;
 }
 
-.resources-table .buttons {
+#share-resources-container .buttons {
   margin-top: 10px;
   text-align: center;
 }
