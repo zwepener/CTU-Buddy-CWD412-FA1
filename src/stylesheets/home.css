@@ -1,10 +1,10 @@
 /* Basic styling */
 
-.home-container #welcome .image-container {
+#home-container #welcome .image-container {
   text-align: center;
 }
 
-.home-container #welcome .image-container img {
+#home-container #welcome .image-container img {
   margin: 10px;
   width: 90%;
   height: auto;
