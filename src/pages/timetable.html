@@ -1,21 +1,18 @@
-<!--COMMENT FROM ZANDRE-->
-<!--Please keep your code inside this container for now, doing otherwise will break the styling. If you understand, you can remove this comment-->
-<div class="timetable">
+<div id="timetable-container">
   <section>
     <h3>Here is your Time-Table</h3>
     <img src="resources/images/timetable.png" alt="Timetable Image" />
-    <div class="typewriter">
-      <h1>Future Enigneer</h1>
-    </div>
+    <br />
+    <h1 id="typewriter">
+      Future&nbsp;
+      <span>Enigneer</span>
+      <span>Designer</span>
+      <span>Programmer</span>
+    </h1>
   </section>
 
   <!-- Snowflake animation -->
-  <div class="snowflakes">
-    <!-- Adjust the number of snowflakes as needed -->
-    <!-- You can also adjust animation properties in the CSS -->
-    <!-- For example, you can change animation duration, delay, etc. -->
-    <!-- Each .snowflake div represents one snowflake -->
-    <!-- Adjust the styles in the CSS to customize the appearance of the snowflakes -->
+  <div id="snowflakes">
     <div class="snowflake"></div>
     <div class="snowflake"></div>
     <div class="snowflake"></div>
@@ -146,23 +143,5 @@
     <div class="snowflake"></div>
     <div class="snowflake"></div>
     <div class="snowflake"></div>
-    <!-- Add more snowflake divs here... -->
   </div>
 </div>
-
-<script>
-  const JobTitles = ["Designer", "Developer", "Enigneer"];
-  let currTitleIndex = 0;
-
-  const typewriter = document.querySelector(
-    ".timetable section .typewriter h1"
-  );
-  typewriter.addEventListener("animationiteration", (event) => {
-    if (event.animationName == "typing") {
-      setTimeout(() => {
-        typewriter.textContent = "Future " + JobTitles[currTitleIndex];
-        currTitleIndex = (currTitleIndex + 1) % JobTitles.length;
-      }, 1000);
-    }
-  });
-</script>
