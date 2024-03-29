@@ -1,8 +1,9 @@
-.discussion-container {
+#discussion-container {
   margin: 20px;
 }
 
-.discussion-container .user-profile {
+#discussion-container .user-profile {
+  padding: 4px 6px;
   display: inline-flex;
   align-items: center;
   font-size: 13px;
@@ -10,7 +11,7 @@
   background-color: whitesmoke;
 }
 
-.discussion-container .user-profile img {
+#discussion-container .user-profile img {
   border-radius: 30px;
   background-color: #811627;
   width: 20px;
@@ -18,26 +19,26 @@
   margin-right: 5px;
 }
 
-.discussion-container .post-form {
+#discussion-container .post-form {
   display: flex;
   align-items: center;
   text-align: center;
   margin: 10px 0;
 }
 
-.discussion-container .post-form textarea {
-  min-width: 40%;
-  height: 100%;
+#discussion-container textarea {
+  max-width: 530px;
+  width: 100%;
   margin-right: 10px;
 }
 
-.discussion-container .posts .post {
+#discussion-container #posts .post {
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
 }
 
-.discussion-container .posts .post .thread {
+#discussion-container #posts .post .thread {
   margin-left: 20px;
 }
