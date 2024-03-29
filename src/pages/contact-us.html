@@ -1,4 +1,4 @@
-<div class="contact-us-container">
+<div id="contact-us-container">
   <h3>Feedback Form</h3>
   <form class="default-box" id="feedback-form">
     <div class="form-field">
@@ -89,3 +89,12 @@
     </button>
   </form>
 </div>
+
+<script>
+  document
+    .getElementById("feedback-form")
+    .addEventListener("submit", (event) => {
+      event.preventDefault();
+      defaultAlert();
+    });
+</script>
