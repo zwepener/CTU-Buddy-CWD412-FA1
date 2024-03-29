@@ -1,19 +1,19 @@
-.about-us-container {
+#about-us-container {
   text-align: center;
 }
 
-.about-us-container .image-container img {
+#about-us-container .image-container img {
   max-width: 286px;
   width: 100%;
   height: auto;
 }
 
-.about-us-container .image-container img,
-.about-us-container hr {
+#about-us-container .image-container img,
+#about-us-container hr {
   margin: 20px 0;
 }
 
-.about-us-container #git-repo {
+#about-us-container #git-repo {
   display: inline-block;
   border-radius: 100px;
   padding: 1px 6px;
@@ -31,7 +31,7 @@
   }
 }
 
-.about-us-container #git-repo span {
+#about-us-container #git-repo span {
   font-family: "Roboto", "Arial", sans-serif;
   --final-width: 194px;
   display: inline-flex;
@@ -50,15 +50,15 @@
   }
 }
 
-.about-us-container #git-repo:hover span {
+#about-us-container #git-repo:hover span {
   animation: expand-git 0.3s forwards;
 }
 
-.about-us-container #git-repo + p {
+#about-us-container #git-repo + p {
   margin-top: 20px;
 }
 
-.about-us-container .profile {
+#about-us-container .profile {
   text-align: left;
   display: flex;
   align-items: center;
@@ -69,7 +69,7 @@
   padding-right: 60px;
 }
 
-.about-us-container .profile img {
+#about-us-container .profile img {
   --img-size: 140px;
   width: var(--img-size);
   height: var(--img-size);
@@ -77,6 +77,6 @@
   margin-right: 30px;
 }
 
-.about-us-container .profile-details ul {
+#about-us-container .profile-details ul {
   margin-left: 20px;
 }
