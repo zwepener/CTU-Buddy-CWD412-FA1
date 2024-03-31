@@ -1,4 +1,6 @@
-The CTU Buddy System is an innovative branch website designed to enhance the academic journey of CTU Training Solutions’ students. With a focus on collaboration and resource sharing, our platform offers a suite of features tailored to support and enrich the learning experience.
+[College Programming Project]
+
+The CTU Buddy System is an innovative website designed to enhance the academic journey of CTU Training Solutions’ students. With a focus on collaboration and resource sharing, our platform offers a suite of features tailored to support and enrich the learning experience.
 
 Key Features:
 * **Timetable Page:** Organize your academic week with ease. Our intuitive timetable allows you to view your class schedule at a glance, ensuring you never miss a session.
