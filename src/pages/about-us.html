@@ -1,117 +1,196 @@
-<div id="about-us-container">
-  <section>
-    <h3>About CTU</h3>
-    <a
-      href="https://ctutraining.ac.za/"
-      class="image-container"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src="resources/images/ctu-logo.jpg" class="logo-img" />
-    </a>
-    <p>
-      CTU Training Solutions is an award-winning private tertiary education
-      provider and has been developing skilled professionals since 1987. We
-      offer training solutions for full time and part time students. Our
-      national qualifications and international vendor-related certifications
-      are updated regularly according to industry standards and pave the road to
-      success for our graduates entering future jobs introduced by the 4th
-      Industrial Revolution. We also offer short courses that are skills-based
-      and vendor-specific. International certifications are available to
-      specific relevant qualifications. CTU Training Solutions is a Level 2
-      B-BBEE contributor and can assist companies with learnerships. CTU is also
-      registered with the Department of Higher Education as a Private Higher
-      Education Institution. We have over 14 registered ICT learnerships up to
-      NQF Level 6. Skills shortages are a key threat to the future growth of
-      South African businesses. Upskilling the existing workforce is vital for
-      securing a business' future and ensuring it remains competitive. If you or
-      your employees are well trained, they'll be more productive, leading to
-      increased efficiency, and higher profits for your business. With faculties
-      in IT, Design, Business & Management, Engineering and Humanities,
-      participants have the choice to study full time (1 to 3-year
-      qualifications and technical and other diplomas) or part time
-      (qualifications, short courses and skills development programmes).
-    </p>
-  </section>
-  <hr />
-  <section>
-    <h3>About The CTU Buddy System</h3>
-    <a href="main.html" class="image-container">
-      <img src="resources/images/ctu-buddy-logo.png" class="logo-img" />
-    </a>
-    <br />
-    <a
-      href="https://github.com/zwepener/CTU-Buddy-CWD412-FA1"
-      id="git-repo"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="fa-brands fa-github"></i
-      ><span>&nbsp;• CTU-Buddy-CWD412-FA1</span>
-    </a>
-    <p>
-      The CTU Buddy System is an innovative website designed to enhance the
-      academic journey of CTU Training Solutions' students. With a focus on
-      collaboration and resource sharing, our platform offers a suite of
-      features tailored to support and enrich the learning experience. The CTU
-      Buddy System mirrors the commitment of CTU Training Solutions to foster a
-      community of skilled professionals. By providing a platform for students
-      to connect, collaborate, and access essential academic tools, we empower
-      them to excel in their studies and prepare for the challenges of the 4th
-      Industrial Revolution. Join us in shaping a future where education is
-      interactive, accessible, and always within reach.
-    </p>
-  </section>
-  <hr />
-  <section>
-    <h3>Meet the Team (Group VRG)</h3>
-    <div class="default-box profile">
-      <img src="resources/images/zandre-pic.jpeg" />
-      <div class="profile-details">
-        <span><b>Name:</b> Zandré Wepener</span><br />
-        <span><b>Role(s):</b></span
-        ><br />
-        <ul>
-          <li>Leader</li>
-          <li>Project Manager</li>
-        </ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/about-us.css" />
+    <title>CTU-Buddy About Us</title>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+      <input type="checkbox" id="expand" />
+      <div class="container">
+        <a href="home.html">
+          <img
+            src="../resources/images/ctu-buddy-logo.png"
+            alt="CTU Buddy"
+            class="logo-img"
+          />
+        </a>
+        <label for="expand" class="bar">
+          <span class="fa-solid fa-bars" id="bars"></span>
+          <span class="fa-solid fa-times" id="times"></span>
+        </label>
       </div>
+      <menu>
+        <li>
+          <a href="home.html">
+            <i class="fa-solid fa-home" id="home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="timetable.html">
+            <i class="fa-solid fa-calendar-week" id="timetable"></i>
+            Timetable
+          </a>
+        </li>
+        <li>
+          <a href="discussion.html">
+            <i class="fa-solid fa-comment-dots" id="discussion"></i>
+            Discussion
+          </a>
+        </li>
+        <li>
+          <a href="share-resources.html">
+            <i class="fa-solid fa-share-nodes" id="share-resources"></i>
+            Share Resources
+          </a>
+        </li>
+        <li id="active">
+          <a href="about-us.html">
+            <i class="fa-solid fa-circle-info" id="about-us"></i>
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="contact-us.html">
+            <i class="fa-solid fa-message" id="contact-us"></i>
+            Contact Us
+          </a>
+        </li>
+      </menu>
+    </nav>
+
+    <div class="default-box content" id="about-us-container">
+      <section>
+        <h3>About CTU</h3>
+        <a
+          href="https://ctutraining.ac.za/"
+          class="image-container"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../resources/images/ctu-logo.jpg" class="logo-img" alt="" />
+        </a>
+        <p>
+          CTU Training Solutions is an award-winning private tertiary education
+          provider and has been developing skilled professionals since 1987. We
+          offer training solutions for full time and part time students. Our
+          national qualifications and international vendor-related
+          certifications are updated regularly according to industry standards
+          and pave the road to success for our graduates entering future jobs
+          introduced by the 4th Industrial Revolution. We also offer short
+          courses that are skills-based and vendor-specific. International
+          certifications are available to specific relevant qualifications. CTU
+          Training Solutions is a Level 2 B-BBEE contributor and can assist
+          companies with learnerships. CTU is also registered with the
+          Department of Higher Education as a Private Higher Education
+          Institution. We have over 14 registered ICT learnerships up to NQF
+          Level 6. Skills shortages are a key threat to the future growth of
+          South African businesses. Upskilling the existing workforce is vital
+          for securing a business' future and ensuring it remains competitive.
+          If you or your employees are well trained, they'll be more productive,
+          leading to increased efficiency, and higher profits for your business.
+          With faculties in IT, Design, Business & Management, Engineering and
+          Humanities, participants have the choice to study full time (1 to
+          3-year qualifications and technical and other diplomas) or part time
+          (qualifications, short courses and skills development programmes).
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h3>About The CTU Buddy System</h3>
+        <a href="home.html" class="image-container">
+          <img
+            src="../resources/images/ctu-buddy-logo.png"
+            class="logo-img"
+            alt=""
+          />
+        </a>
+        <br />
+        <a
+          href="https://github.com/zwepener/CTU-Buddy-CWD412-FA1"
+          id="git-repo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i
+          ><span>&nbsp;• CTU-Buddy-CWD412-FA1</span>
+        </a>
+        <p>
+          The CTU Buddy System is an innovative website designed to enhance the
+          academic journey of CTU Training Solutions' students. With a focus on
+          collaboration and resource sharing, our platform offers a suite of
+          features tailored to support and enrich the learning experience. The
+          CTU Buddy System mirrors the commitment of CTU Training Solutions to
+          foster a community of skilled professionals. By providing a platform
+          for students to connect, collaborate, and access essential academic
+          tools, we empower them to excel in their studies and prepare for the
+          challenges of the 4th Industrial Revolution. Join us in shaping a
+          future where education is interactive, accessible, and always within
+          reach.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h3>Meet the Team (Group VRG)</h3>
+        <div class="default-box profile">
+          <img src="../resources/images/zandre-pic.jpeg" alt="" />
+          <div class="profile-details">
+            <span><b>Name:</b> Zandré Wepener</span><br />
+            <span><b>Role(s):</b></span
+            ><br />
+            <ul>
+              <li>Leader</li>
+              <li>Project Manager</li>
+            </ul>
+          </div>
+        </div>
+        <div class="default-box profile">
+          <img src="../resources/images/mzwakhe-pic.jpg" alt="" />
+          <div class="profile-details">
+            <span><b>Name:</b> Mzwakhe Khumalo</span><br />
+            <span><b>Role(s):</b></span
+            ><br />
+            <ul>
+              <li>Web Page Designer</li>
+              <li>Programmer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="default-box profile">
+          <img src="../resources/images/bophelo-pic.jpg" alt="" />
+          <div class="profile-details">
+            <span><b>Name:</b> Bophelo Malepu</span><br />
+            <span><b>Role(s):</b></span
+            ><br />
+            <ul>
+              <li>Web Page Designer</li>
+              <li>Programmer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="default-box profile">
+          <img src="../resources/images/luzuko-pic.jpg" alt="" />
+          <div class="profile-details">
+            <span><b>Name:</b> Luzuko Sinxezi</span><br />
+            <span><b>Role(s):</b></span
+            ><br />
+            <ul>
+              <li>Web Page Designer</li>
+              <li>Programmer</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="default-box profile">
-      <img src="resources/images/mzwakhe-pic.jpg" />
-      <div class="profile-details">
-        <span><b>Name:</b> Mzwakhe Khumalo</span><br />
-        <span><b>Role(s):</b></span
-        ><br />
-        <ul>
-          <li>Web Page Designer</li>
-          <li>Programmer</li>
-        </ul>
-      </div>
-    </div>
-    <div class="default-box profile">
-      <img src="resources/images/bophelo-pic.jpg" />
-      <div class="profile-details">
-        <span><b>Name:</b> Bophelo Malepu</span><br />
-        <span><b>Role(s):</b></span
-        ><br />
-        <ul>
-          <li>Web Page Designer</li>
-          <li>Programmer</li>
-        </ul>
-      </div>
-    </div>
-    <div class="default-box profile">
-      <img src="resources/images/luzuko-pic.jpg" />
-      <div class="profile-details">
-        <span><b>Name:</b> Luzuko Sinxezi</span><br />
-        <span><b>Role(s):</b></span
-        ><br />
-        <ul>
-          <li>Web Page Designer</li>
-          <li>Programmer</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</div>
+
+    <footer>
+      <p>&copy;2024 CTU-Buddy. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

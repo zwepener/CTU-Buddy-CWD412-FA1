@@ -1,4 +1,27 @@
+#share-resources-container #search-area {
+  display: inline-flex;
+  max-width: 500px;
+  width: 100%;
+}
+
+#share-resources-container #search-input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: solid 1px #f7f7f7;
+}
+
+#share-resources-container #search-input:focus {
+  outline: solid 1px #811627;
+}
+
+#share-resources-container #search-input,
+#share-resources-container #search-button {
+  border-radius: 30px;
+}
+
 #share-resources-container .table-fixed-header {
+  margin-top: 20px;
   display: inline-block;
   width: 100%;
   overflow-y: auto;

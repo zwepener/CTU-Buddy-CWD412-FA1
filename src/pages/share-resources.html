@@ -1,77 +1,152 @@
-<div id="share-resources-container">
-  <div class="default-box table-fixed-header">
-    <table>
-      <thead>
-        <tr>
-          <th width="30%" scope="col">Title</th>
-          <th width="50%" scope="col">Filename</th>
-          <th width="5%" scope="col"></th>
-          <th width="15%" scope="col">Module</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>CF412 - FA1</td>
-          <td>CF412 FA1 (2024 Q1).pdf</td>
-          <td>
-            <a
-              class="default-button"
-              href="resources/sample files/CF412 FA1 (2024 Q1).pdf"
-              download
-            >
-              <i class="fa-solid fa-download"></i>
-            </a>
-          </td>
-          <td>CF412</td>
-        </tr>
-        <tr>
-          <td>CWD412 - FA1</td>
-          <td>CWD412 FA1 (2024 Q1).zip</td>
-          <td>
-            <a
-              class="default-button"
-              href="resources/sample files/CWD412 FA1 (2024 Q1).zip"
-              download
-            >
-              <i class="fa-solid fa-download"></i>
-            </a>
-          </td>
-          <td>CWD412</td>
-        </tr>
-        <tr>
-          <td>ENA412 - FA1</td>
-          <td>ENA412 FA1 (2024 Q1).pdf</td>
-          <td>
-            <a
-              class="default-button"
-              href="resources/sample files/ENA412 FA1 (2024 Q1).pdf"
-              download
-            >
-              <i class="fa-solid fa-download"></i>
-            </a>
-          </td>
-          <td>ENA412</td>
-        </tr>
-        <tr>
-          <td>RD412 - FA1</td>
-          <td>RD412 FA1 (2024 Q1).pdf</td>
-          <td>
-            <a
-              class="default-button"
-              href="resources/sample files/RD412 FA1 (2024 Q1).pdf"
-              download
-            >
-              <i class="fa-solid fa-download"></i>
-            </a>
-          </td>
-          <td>RD412</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="buttons">
-    <button class="default-button" id="upload" onclick="uploadClick()">
-      <i class="fa-solid fa-upload"></i>&nbsp;Upload
-    </button>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/navbar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../stylesheets/share-resources.css"
+    />
+    <script type="text/javascript" src="../scripts/share-resources.js"></script>
+    <title>CTU-Buddy Share Resources</title>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+      <input type="checkbox" id="expand" />
+      <div class="container">
+        <a href="home.html">
+          <img
+            src="../resources/images/ctu-buddy-logo.png"
+            alt="CTU Buddy"
+            class="logo-img"
+          />
+        </a>
+        <label for="expand" class="bar">
+          <span class="fa-solid fa-bars" id="bars"></span>
+          <span class="fa-solid fa-times" id="times"></span>
+        </label>
+      </div>
+      <menu>
+        <li>
+          <a href="home.html">
+            <i class="fa-solid fa-home" id="home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="timetable.html">
+            <i class="fa-solid fa-calendar-week" id="timetable"></i>
+            Timetable
+          </a>
+        </li>
+        <li>
+          <a href="discussion.html">
+            <i class="fa-solid fa-comment-dots" id="discussion"></i>
+            Discussion
+          </a>
+        </li>
+        <li id="active">
+          <a href="share-resources.html">
+            <i class="fa-solid fa-share-nodes" id="share-resources"></i>
+            Share Resources
+          </a>
+        </li>
+        <li>
+          <a href="about-us.html">
+            <i class="fa-solid fa-circle-info" id="about-us"></i>
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="contact-us.html">
+            <i class="fa-solid fa-message" id="contact-us"></i>
+            Contact Us
+          </a>
+        </li>
+      </menu>
+    </nav>
+
+    <div class="default-box content" id="share-resources-container">
+      <div id="search-area">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search Files . . ."
+        />
+        <button class="default-button" id="search-button" onclick="searchClick()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Search
+        </button>
+      </div>
+      <div class="default-box table-fixed-header">
+        <table>
+          <thead>
+            <tr>
+              <th width="30%" scope="col">Title</th>
+              <th width="50%" scope="col">Filename</th>
+              <th width="5%" scope="col"></th>
+              <th width="15%" scope="col">Module</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CF412 - FA1</td>
+              <td>CF412 FA1 (2024 Q1).pdf</td>
+              <td>
+                <a
+                  class="default-button"
+                  href="../resources/sample files/CF412 FA1 (2024 Q1).pdf"
+                  download
+                >
+                  <i class="fa-solid fa-download"></i>
+                </a>
+              </td>
+              <td>CF412</td>
+            </tr>
+            <tr>
+              <td>ENA412 - FA1</td>
+              <td>ENA412 FA1 (2024 Q1).pdf</td>
+              <td>
+                <a
+                  class="default-button"
+                  href="../resources/sample files/ENA412 FA1 (2024 Q1).pdf"
+                  download
+                >
+                  <i class="fa-solid fa-download"></i>
+                </a>
+              </td>
+              <td>ENA412</td>
+            </tr>
+            <tr>
+              <td>RD412 - FA1</td>
+              <td>RD412 FA1 (2024 Q1).pdf</td>
+              <td>
+                <a
+                  class="default-button"
+                  href="../resources/sample files/RD412 FA1 (2024 Q1).pdf"
+                  download
+                >
+                  <i class="fa-solid fa-download"></i>
+                </a>
+              </td>
+              <td>RD412</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="buttons">
+        <button class="default-button" id="upload" onclick="uploadClick()">
+          <i class="fa-solid fa-upload"></i>&nbsp;Upload
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy;2024 CTU-Buddy. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
