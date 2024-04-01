@@ -1,140 +1,218 @@
-<div id="discussion-container">
-  <!-- User profile section -->
-  <div class="user-profile">
-    <img class="user-profile-pic" src="#" alt="" />
-    <span class="user-display-name">&lt;User Display Name&gt;</span>
-  </div>
-
-  <!-- New post form -->
-  <form class="post-form new-post">
-    <textarea
-      class="default-textarea post-content"
-      placeholder="What is on your mind?"
-      required
-    ></textarea>
-    <button type="submit" class="default-button">
-      <i class="fa-solid fa-plus"></i>
-      Post
-    </button>
-  </form>
-
-  <!-- Posts Container -->
-  <div id="posts">
-    <div class="post">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/navbar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../stylesheets/discussion.css"
+    />
+    <script type="text/javascript" src="../scripts/discussion.js"></script>
+    <title>CTU-Buddy Discussion</title>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+      <input type="checkbox" id="expand" />
+      <div class="container">
+        <a href="home.html">
+          <img
+            src="../resources/images/ctu-buddy-logo.png"
+            alt="CTU Buddy"
+            class="logo-img"
+          />
+        </a>
+        <label for="expand" class="bar">
+          <span class="fa-solid fa-bars" id="bars"></span>
+          <span class="fa-solid fa-times" id="times"></span>
+        </label>
+      </div>
+      <menu>
+        <li>
+          <a href="home.html">
+            <i class="fa-solid fa-home" id="home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="timetable.html">
+            <i class="fa-solid fa-calendar-week" id="timetable"></i>
+            Timetable
+          </a>
+        </li>
+        <li id="active">
+          <a href="discussion.html">
+            <i class="fa-solid fa-comment-dots" id="discussion"></i>
+            Discussion
+          </a>
+        </li>
+        <li>
+          <a href="share-resources.html">
+            <i class="fa-solid fa-share-nodes" id="share-resources"></i>
+            Share Resources
+          </a>
+        </li>
+        <li>
+          <a href="about-us.html">
+            <i class="fa-solid fa-circle-info" id="about-us"></i>
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="contact-us.html">
+            <i class="fa-solid fa-message" id="contact-us"></i>
+            Contact Us
+          </a>
+        </li>
+      </menu>
+    </nav>
+    <div class="default-box content" id="discussion-container">
+      <!-- User profile section -->
       <div class="user-profile">
         <img class="user-profile-pic" src="#" alt="" />
-        <span class="user-display-name">&lt;Poster Display Name&gt;</span>
+        <span class="user-display-name">&lt;User Display Name&gt;</span>
       </div>
-      <p>&lt;Post Content&gt;</p>
-      <!-- Nested reply -->
-      <div class="thread">
+
+      <!-- New post form -->
+      <form class="post-form new-post">
+        <textarea
+          class="default-textarea post-content"
+          placeholder="What is on your mind?"
+          required
+        ></textarea>
+        <button type="submit" class="default-button">
+          <i class="fa-solid fa-plus"></i>
+          Post
+        </button>
+      </form>
+
+      <!-- Posts Container -->
+      <div id="posts">
         <div class="post">
           <div class="user-profile">
             <img class="user-profile-pic" src="#" alt="" />
-            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+            <span class="user-display-name">&lt;Poster Display Name&gt;</span>
           </div>
-          <p>&lt;Reply Content&gt;</p>
-        </div>
-        <form class="post-form reply-post">
-          <textarea
-            class="default-textarea post-content"
-            placeholder="Reply in this thread"
-            required
-          ></textarea>
-          <button type="submit" class="default-button">
-            <i class="fa-solid fa-reply"></i>
-            Reply
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="post">
-      <div class="user-profile">
-        <img class="user-profile-pic" src="#" alt="" />
-        <span class="user-display-name">&lt;Poster Display Name&gt;</span>
-      </div>
-      <p>&lt;Post Content&gt;</p>
-      <!-- Nested reply -->
-      <div class="thread">
-        <div class="post">
-          <div class="user-profile">
-            <img class="user-profile-pic" src="#" alt="" />
-            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+          <p>&lt;Post Content&gt;</p>
+          <!-- Nested reply -->
+          <div class="thread">
+            <div class="post">
+              <div class="user-profile">
+                <img class="user-profile-pic" src="#" alt="" />
+                <span class="user-display-name"
+                  >&lt;Replier Display Name&gt;</span
+                >
+              </div>
+              <p>&lt;Reply Content&gt;</p>
+            </div>
+            <form class="post-form reply-post">
+              <textarea
+                class="default-textarea post-content"
+                placeholder="Reply in this thread"
+                required
+              ></textarea>
+              <button type="submit" class="default-button">
+                <i class="fa-solid fa-reply"></i>
+                Reply
+              </button>
+            </form>
           </div>
-          <p>&lt;Reply Content&gt;</p>
         </div>
         <div class="post">
           <div class="user-profile">
             <img class="user-profile-pic" src="#" alt="" />
-            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
+            <span class="user-display-name">&lt;Poster Display Name&gt;</span>
           </div>
-          <p>&lt;Reply Content&gt;</p>
+          <p>&lt;Post Content&gt;</p>
+          <!-- Nested reply -->
+          <div class="thread">
+            <div class="post">
+              <div class="user-profile">
+                <img class="user-profile-pic" src="#" alt="" />
+                <span class="user-display-name"
+                  >&lt;Replier Display Name&gt;</span
+                >
+              </div>
+              <p>&lt;Reply Content&gt;</p>
+            </div>
+            <div class="post">
+              <div class="user-profile">
+                <img class="user-profile-pic" src="#" alt="" />
+                <span class="user-display-name"
+                  >&lt;Replier Display Name&gt;</span
+                >
+              </div>
+              <p>&lt;Reply Content&gt;</p>
+            </div>
+            <form class="post-form reply-post">
+              <textarea
+                class="default-textarea post-content"
+                placeholder="Reply in this thread"
+                required
+              ></textarea>
+              <button type="submit" class="default-button">
+                <i class="fa-solid fa-reply"></i>
+                Reply
+              </button>
+            </form>
+          </div>
         </div>
-        <form class="post-form reply-post">
-          <textarea
-            class="default-textarea post-content"
-            placeholder="Reply in this thread"
-            required
-          ></textarea>
-          <button type="submit" class="default-button">
-            <i class="fa-solid fa-reply"></i>
-            Reply
-          </button>
-        </form>
+        <div class="post">
+          <div class="user-profile">
+            <img class="user-profile-pic" src="#" />
+            <span class="user-display-name">&lt;Poster Display Name&gt;</span>
+          </div>
+          <p>&lt;Post Content&gt;</p>
+          <!-- Nested reply -->
+          <div class="thread">
+            <div class="post">
+              <div class="user-profile">
+                <img class="user-profile-pic" src="#" />
+                <span class="user-display-name"
+                  >&lt;Replier Display Name&gt;</span
+                >
+              </div>
+              <p>&lt;Reply Content&gt;</p>
+            </div>
+            <div class="post">
+              <div class="user-profile">
+                <img class="user-profile-pic" src="#" />
+                <span class="user-display-name"
+                  >&lt;Replier Display Name&gt;</span
+                >
+              </div>
+              <p>&lt;Reply Content&gt;</p>
+            </div>
+            <div class="post">
+              <div class="user-profile">
+                <img class="user-profile-pic" src="#" />
+                <span class="user-display-name"
+                  >&lt;Replier Display Name&gt;</span
+                >
+              </div>
+              <p>&lt;Reply Content&gt;</p>
+            </div>
+            <form class="post-form reply-post">
+              <textarea
+                class="default-textarea post-content"
+                placeholder="Reply in this thread"
+                required
+              ></textarea>
+              <button type="submit" class="default-button">
+                <i class="fa-solid fa-reply"></i>
+                Reply
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="post">
-      <div class="user-profile">
-        <img class="user-profile-pic" src="#" />
-        <span class="user-display-name">&lt;Poster Display Name&gt;</span>
-      </div>
-      <p>&lt;Post Content&gt;</p>
-      <!-- Nested reply -->
-      <div class="thread">
-        <div class="post">
-          <div class="user-profile">
-            <img class="user-profile-pic" src="#" />
-            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
-          </div>
-          <p>&lt;Reply Content&gt;</p>
-        </div>
-        <div class="post">
-          <div class="user-profile">
-            <img class="user-profile-pic" src="#" />
-            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
-          </div>
-          <p>&lt;Reply Content&gt;</p>
-        </div>
-        <div class="post">
-          <div class="user-profile">
-            <img class="user-profile-pic" src="#" />
-            <span class="user-display-name">&lt;Replier Display Name&gt;</span>
-          </div>
-          <p>&lt;Reply Content&gt;</p>
-        </div>
-        <form class="post-form reply-post">
-          <textarea
-            class="default-textarea post-content"
-            placeholder="Reply in this thread"
-            required
-          ></textarea>
-          <button type="submit" class="default-button">
-            <i class="fa-solid fa-reply"></i>
-            Reply
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-  document.querySelectorAll(".post-form").forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      /*
-      var postContent = form.querySelector(".post-content").value;
-      */
-      defaultAlert();
-    });
-  });
-</script>
+
+    <footer>
+      <p>&copy;2024 CTU-Buddy. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
