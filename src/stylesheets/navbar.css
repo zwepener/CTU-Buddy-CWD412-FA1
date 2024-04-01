@@ -70,6 +70,7 @@
   color: #811627;
 }
 
+/* Disable the ability to click on the active menu item */
 #active {
   pointer-events: none;
 }
@@ -85,7 +86,7 @@
   display: none;
 }
 
-/*This part is so that the website will still look good on smaller screens.*/
+/* This part is so that the navbar will still look good on smaller screens. */
 @media screen and (max-width: 1219px) {
   /*When screen width is smaller than or equal to 1219px, the following styling will be applied...*/
   .navbar {
@@ -120,7 +121,7 @@
     display: none;
   }
 
-  /* When checkbox '#expand' is checked, the following styling will be applied... */
+  /* When checkbox '#expand' is checked, the following styling will also be applied... */
   #expand:checked + .container {
     margin-bottom: 20px;
   }

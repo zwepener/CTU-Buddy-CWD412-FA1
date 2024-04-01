@@ -32,7 +32,7 @@
 }
 
 #about-us-container #git-repo span {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   --final-width: 194px;
   display: inline-flex;
   overflow: hidden;

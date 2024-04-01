@@ -1,4 +1,6 @@
+// Wait for page contents to finish loading
 window.addEventListener("load", () => {
+  // Bind logic to the 'submit' event of each post form
   document.querySelectorAll(".post-form").forEach((form) => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
