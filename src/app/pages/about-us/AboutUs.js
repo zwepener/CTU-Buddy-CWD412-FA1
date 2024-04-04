@@ -1,80 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/about-us.css" />
-    <title>CTU-Buddy About Us</title>
-  </head>
-  <body>
-    <!--Navigation Bar-->
-    <nav class="navbar">
-      <input type="checkbox" id="expand" />
-      <div class="container">
-        <a href="home.html">
-          <img
-            src="../resources/images/ctu-buddy-logo.png"
-            alt="CTU Buddy"
-            class="logo-img"
-          />
-        </a>
-        <label for="expand" class="bar">
-          <span class="fa-solid fa-bars" id="bars"></span>
-          <span class="fa-solid fa-times" id="times"></span>
-        </label>
-      </div>
-      <menu>
-        <li>
-          <a href="home.html">
-            <i class="fa-solid fa-home" id="home"></i>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="timetable.html">
-            <i class="fa-solid fa-calendar-week" id="timetable"></i>
-            Timetable
-          </a>
-        </li>
-        <li>
-          <a href="discussion.html">
-            <i class="fa-solid fa-comment-dots" id="discussion"></i>
-            Discussion
-          </a>
-        </li>
-        <li>
-          <a href="share-resources.html">
-            <i class="fa-solid fa-share-nodes" id="share-resources"></i>
-            Share Resources
-          </a>
-        </li>
-        <li id="active">
-          <a href="about-us.html">
-            <i class="fa-solid fa-circle-info" id="about-us"></i>
-            About Us
-          </a>
-        </li>
-        <li>
-          <a href="contact-us.html">
-            <i class="fa-solid fa-message" id="contact-us"></i>
-            Contact Us
-          </a>
-        </li>
-      </menu>
-    </nav>
+import ctu_logo from "../../resources/images/ctu-logo.jpg";
+import logo from "../../resources/images/ctu-buddy-logo.png";
+import zandre_pic from "../../resources/images/zandre-pic.jpeg";
+import mzwakhe_pic from "../../resources/images/mzwakhe-pic.jpg";
+import bophelo_pic from "../../resources/images/bophelo-pic.jpg";
+import luzuko_pic from "../../resources/images/luzuko-pic.jpg";
 
-    <div class="default-box content" id="about-us-container">
+import "./AboutUs.css";
+
+export default function AboutUs() {
+  return (
+    <div className="default-box content" id="about-us-container">
       <section>
         <h3>About CTU</h3>
         <a
           href="https://ctutraining.ac.za/"
-          class="image-container"
+          className="image-container"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="../resources/images/ctu-logo.jpg" class="logo-img" alt="" />
+          <img src={ctu_logo} className="logo-img" alt="" />
         </a>
         <p>
           CTU Training Solutions is an award-winning private tertiary education
@@ -104,12 +48,8 @@
       <hr />
       <section>
         <h3>About The CTU Buddy System</h3>
-        <a href="home.html" class="image-container">
-          <img
-            src="../resources/images/ctu-buddy-logo.png"
-            class="logo-img"
-            alt=""
-          />
+        <a href="home.html" className="image-container">
+          <img src={logo} className="logo-img" alt="" />
         </a>
         <br />
         <a
@@ -118,8 +58,8 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-brands fa-github"></i
-          ><span>&nbsp;• CTU-Buddy-CWD412-FA1</span>
+          <i className="fa-brands fa-github"></i>
+          <span>&nbsp;• CTU-Buddy-CWD412-FA1</span>
         </a>
         <p>
           The CTU Buddy System is an innovative website designed to enhance the
@@ -138,48 +78,68 @@
       <hr />
       <section>
         <h3>Meet the Team (Group VRG)</h3>
-        <div class="default-box profile">
-          <img src="../resources/images/zandre-pic.jpeg" alt="" />
-          <div class="profile-details">
-            <span><b>Name:</b> Zandré Wepener</span><br />
-            <span><b>Role(s):</b></span
-            ><br />
+        <div className="default-box profile">
+          <img src={zandre_pic} alt="" />
+          <div className="profile-details">
+            <span>
+              <b>Name:</b> Zandré Wepener
+            </span>
+            <br />
+            <span>
+              <b>Role(s):</b>
+            </span>
+            <br />
             <ul>
               <li>Leader</li>
               <li>Project Manager</li>
             </ul>
           </div>
         </div>
-        <div class="default-box profile">
-          <img src="../resources/images/mzwakhe-pic.jpg" alt="" />
-          <div class="profile-details">
-            <span><b>Name:</b> Mzwakhe Khumalo</span><br />
-            <span><b>Role(s):</b></span
-            ><br />
+        <div className="default-box profile">
+          <img src={mzwakhe_pic} alt="" />
+          <div className="profile-details">
+            <span>
+              <b>Name:</b> Mzwakhe Khumalo
+            </span>
+            <br />
+            <span>
+              <b>Role(s):</b>
+            </span>
+            <br />
             <ul>
               <li>Web Page Designer</li>
               <li>Programmer</li>
             </ul>
           </div>
         </div>
-        <div class="default-box profile">
-          <img src="../resources/images/bophelo-pic.jpg" alt="" />
-          <div class="profile-details">
-            <span><b>Name:</b> Bophelo Malepu</span><br />
-            <span><b>Role(s):</b></span
-            ><br />
+        <div className="default-box profile">
+          <img src={bophelo_pic} alt="" />
+          <div className="profile-details">
+            <span>
+              <b>Name:</b> Bophelo Malepu
+            </span>
+            <br />
+            <span>
+              <b>Role(s):</b>
+            </span>
+            <br />
             <ul>
               <li>Web Page Designer</li>
               <li>Programmer</li>
             </ul>
           </div>
         </div>
-        <div class="default-box profile">
-          <img src="../resources/images/luzuko-pic.jpg" alt="" />
-          <div class="profile-details">
-            <span><b>Name:</b> Luzuko Sinxezi</span><br />
-            <span><b>Role(s):</b></span
-            ><br />
+        <div className="default-box profile">
+          <img src={luzuko_pic} alt="" />
+          <div className="profile-details">
+            <span>
+              <b>Name:</b> Luzuko Sinxezi
+            </span>
+            <br />
+            <span>
+              <b>Role(s):</b>
+            </span>
+            <br />
             <ul>
               <li>Web Page Designer</li>
               <li>Programmer</li>
@@ -188,10 +148,5 @@
         </div>
       </section>
     </div>
-
-    <!--Footer-->
-    <footer>
-      <p>&copy;2024 CTU-Buddy. All rights reserved.</p>
-    </footer>
-  </body>
-</html>
+  );
+}

@@ -28,7 +28,8 @@
   margin-right: 10px;
 }
 
-#discussion-container #posts .post {
+#discussion-container #posts .post,
+#discussion-container #posts .reply {
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 10px;
