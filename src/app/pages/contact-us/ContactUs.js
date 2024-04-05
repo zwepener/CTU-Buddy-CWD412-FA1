@@ -6,6 +6,8 @@ export default function ContactUs() {
   const FeedbackFormRef = useRef(null);
 
   useEffect(() => {
+    const FeedbackFormElem = FeedbackFormRef.current;
+
     const handleSubmit = (event) => {
       event.preventDefault();
       alert(
@@ -13,11 +15,10 @@ export default function ContactUs() {
       );
     };
 
-    const element = FeedbackFormRef.current;
-    element.addEventListener("submit", handleSubmit);
+    FeedbackFormElem.addEventListener("submit", handleSubmit);
 
     return () => {
-      element.removeEventListener("submit", handleSubmit);
+      FeedbackFormElem.removeEventListener("submit", handleSubmit);
     };
   }, []); // Empty dependency array ensures the listener is added only once
 

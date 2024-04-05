@@ -1,7 +1,6 @@
-import { Outlet, NavLink, Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import logo from "../../resources/images/ctu-buddy-logo.png";
-import "./navbar.css";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
@@ -19,7 +18,7 @@ export default function Navbar() {
         </div>
         <menu>
           <li>
-            <NavLink exact="true" to="/">
+            <NavLink to="/">
               <i className="fa-solid fa-home" id="home"></i>
               &nbsp;Home
             </NavLink>

@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 import ctu_logo from "../../resources/images/ctu-logo.jpg";
-import logo from "../../resources/images/ctu-buddy-logo.png";
+import buddy_logo from "../../resources/images/ctu-buddy-logo.png";
 import zandre_pic from "../../resources/images/zandre-pic.jpeg";
 import mzwakhe_pic from "../../resources/images/mzwakhe-pic.jpg";
 import bophelo_pic from "../../resources/images/bophelo-pic.jpg";
@@ -48,9 +50,9 @@ export default function AboutUs() {
       <hr />
       <section>
         <h3>About The CTU Buddy System</h3>
-        <a href="home.html" className="image-container">
-          <img src={logo} className="logo-img" alt="" />
-        </a>
+        <Link to="/" className="image-container">
+          <img src={buddy_logo} className="logo-img" alt="" />
+        </Link>
         <br />
         <a
           href="https://github.com/zwepener/CTU-Buddy-CWD412-FA1"

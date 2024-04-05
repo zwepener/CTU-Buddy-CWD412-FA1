@@ -37,7 +37,6 @@
 
 .navbar menu {
   display: flex;
-  margin: auto 0;
   list-style: none;
   border-radius: 10px;
 }
@@ -68,13 +67,13 @@
 }
 
 /* Disable the ability to click on the active menu item */
-.navbar menu li a .active {
+.navbar menu li a.active {
   pointer-events: none;
 }
 
-.navbar menu li a .active,
-.navbar menu li a .active:hover,
-.navbar menu li a .active:focus {
+.navbar menu li a.active,
+.navbar menu li a.active:hover,
+.navbar menu li a.active:focus {
   border: 1px solid #811627;
   box-shadow: inset -7px -7px 17px white, inset 7px 7px 17px #46464626;
 }
@@ -93,20 +92,22 @@
   .navbar menu {
     display: block;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
   }
 
   .navbar menu li {
     position: relative;
     margin: 20px 0;
     display: none;
-
     width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar menu li a {
     padding: 25px;
     font-size: 20px;
     border-radius: 30px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   .navbar .container .bar {

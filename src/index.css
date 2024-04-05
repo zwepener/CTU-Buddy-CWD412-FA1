@@ -18,6 +18,12 @@ body {
   min-height: 100vh;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .logo-img {
   font-size: 35px;
   font-weight: 800;

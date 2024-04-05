@@ -1,19 +1,38 @@
+import { useRef, useEffect } from "react";
+
 import "./Discussion.css";
 
-// Placeholder element for User Profiles
-export function UserProfile() {
+function UserProfile() {
   return (
     <div className="user-profile">
       <img className="user-profile-pic" src="#" alt="" />
-      <span className="user-display-name">&lt;User Display Name&gt;</span>
+      <span className="user-display-name">&lt; User Display Name &gt;</span>
     </div>
   );
 }
 
-// Placeholder element for New Post Forms
-export function NewPostForm() {
+function NewPostForm() {
+  const NewPostFormRef = useRef(null);
+
+  useEffect(() => {
+    const NewPostFormElem = NewPostFormRef.current;
+
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      alert(
+        "Due to the static nature of FA 1, no logic has been added to this element yet."
+      );
+    };
+
+    NewPostFormElem.addEventListener("submit", handleSubmit);
+
+    return () => {
+      NewPostFormElem.removeEventListener("submit", handleSubmit);
+    };
+  }, []); // Empty dependency array ensures the listener is added only once
+
   return (
-    <form className="post-form new-post">
+    <form ref={NewPostFormRef} className="post-form new-post">
       <textarea
         className="default-textarea post-content"
         placeholder="What is on your mind?"
@@ -21,16 +40,34 @@ export function NewPostForm() {
       ></textarea>
       <button type="submit" className="default-button">
         <i className="fa-solid fa-plus"></i>
-        Post
+        &nbsp;Post
       </button>
     </form>
   );
 }
 
-// Placeholder element for Reply Post Forms
-export function ReplyPostForm() {
+function ReplyPostForm() {
+  const ReplyPostFormRef = useRef(null);
+
+  useEffect(() => {
+    const ReplyPostFormElem = ReplyPostFormRef.current;
+
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      alert(
+        "Due to the static nature of FA 1, no logic has been added to this element yet."
+      );
+    };
+
+    ReplyPostFormElem.addEventListener("submit", handleSubmit);
+
+    return () => {
+      ReplyPostFormElem.removeEventListener("submit", handleSubmit);
+    };
+  }, []); // Empty dependency array ensures the listener is added only once
+
   return (
-    <form className="post-form reply-post">
+    <form ref={ReplyPostFormRef} className="post-form reply-post">
       <textarea
         className="default-textarea post-content"
         placeholder="Reply in this thread"
@@ -38,68 +75,53 @@ export function ReplyPostForm() {
       ></textarea>
       <button type="submit" className="default-button">
         <i className="fa-solid fa-reply"></i>
-        Reply
+        &nbsp;Reply
       </button>
     </form>
   );
 }
 
-// Placeholder element for a single Post
-export function Post() {
+function Post(props) {
+  const thread = props.thread;
   return (
     <div className="post">
       <UserProfile />
-      <p>&lt;Post Content&gt;</p>
+      <p>&lt; Post Content &gt;</p>
+      {thread}
     </div>
   );
 }
 
-// Placeholder element for a single Reply
-export function Reply() {
+function Thread(props) {
+  const replies = props.replies;
+  return (
+    <div className="thread">
+      {replies.map((reply) => {
+        return reply;
+      })}
+      <ReplyPostForm />
+    </div>
+  );
+}
+
+function Reply() {
   return (
     <div className="reply">
       <UserProfile />
-      <p>&lt;Reply Content&gt;</p>
+      <p>&lt; Reply Content &gt;</p>
     </div>
-  )
+  );
 }
 
 export default function Discussion() {
   return (
     <div className="default-box content" id="discussion-container">
       <UserProfile />
-
       <NewPostForm />
-
-      {/* Posts Container */}
       <div id="posts">
-        <div className="post">
-          <UserProfile />
-          <p>&lt;Post Content&gt;</p>
-          <div className="thread">
-            <Reply />
-            <ReplyPostForm />
-          </div>
-        </div>
-        <div className="post">
-          <UserProfile />
-          <p>&lt;Post Content&gt;</p>
-          <div className="thread">
-            <Reply />
-            <Reply />
-            <ReplyPostForm />
-          </div>
-        </div>
-        <div className="post">
-          <UserProfile />
-          <p>&lt;Post Content&gt;</p>
-          <div className="thread">
-            <Reply />
-            <Reply />
-            <Reply />
-            <ReplyPostForm />
-          </div>
-        </div>
+        <Post thread={<Thread replies={[<Reply />]} />} />
+        <Post thread={<Thread replies={[<Reply />, <Reply />]} />} />
+        <Post thread={<Thread replies={[<Reply />, <Reply />, <Reply />]} />} />
       </div>
     </div>
   );
