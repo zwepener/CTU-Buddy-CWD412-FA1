@@ -1,6 +1,6 @@
 # Zandré's ignores:
 src/resources/photoshop
-Simple Web Server (Windows - Portable)
+node_modules
 
 # Luzuko's ignores:
 index.html
