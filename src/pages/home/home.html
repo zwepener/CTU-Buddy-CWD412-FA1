@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/home.css" />
+    <link rel="stylesheet" type="text/css" href="../../default.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/navbar/navbar.css" />
+
+    <link rel="stylesheet" type="text/css" href="home.css" />
     <title>CTU-Buddy Home</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
       <div class="container">
         <a href="home.html">
           <img
-            src="../resources/images/ctu-buddy-logo.png"
+            src="../../assets/static/images/ctu-buddy-logo.png"
             alt="CTU Buddy"
             class="logo-img"
           />
@@ -27,37 +28,37 @@
       </div>
       <menu>
         <li id="active">
-          <a href="home.html">
+          <a href="../home/home.html">
             <i class="fa-solid fa-home" id="home"></i>
             Home
           </a>
         </li>
         <li>
-          <a href="timetable.html">
+          <a href="../timetable/timetable.html">
             <i class="fa-solid fa-calendar-week" id="timetable"></i>
             Timetable
           </a>
         </li>
         <li>
-          <a href="discussion.html">
+          <a href="../discussion/discussion.html">
             <i class="fa-solid fa-comment-dots" id="discussion"></i>
             Discussion
           </a>
         </li>
         <li>
-          <a href="share-resources.html">
+          <a href="../share-resources/share-resources.html">
             <i class="fa-solid fa-share-nodes" id="share-resources"></i>
             Share Resources
           </a>
         </li>
         <li>
-          <a href="about-us.html">
+          <a href="../about-us/about-us.html">
             <i class="fa-solid fa-circle-info" id="about-us"></i>
             About Us
           </a>
         </li>
         <li>
-          <a href="contact-us.html">
+          <a href="../contact-us/contact-us.html">
             <i class="fa-solid fa-message" id="contact-us"></i>
             Contact Us
           </a>
@@ -66,14 +67,39 @@
     </nav>
 
     <!-- Content showcasing images, videos, animations, and information -->
-    <div class="default-box content" id="home-container">
-      <section id="welcome">
-        <div class="image-container">
-          <img src="../resources/images/welcome.jpg" alt="Welcome" />
-          <img src="../resources/images/home-decor-1.jpg" alt="decor-1" />
-          <img src="../resources/images/home-decor-2.png" alt="decor-2" />
+    <div id="home-container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Welcome to CTU Buddy</h1>
+        <p>Explore our world-class educational features.</p>
+      </section>
+
+      <!-- Main Box with Wave Animation -->
+      <section class="s default-box">
+        <h2 class="header">CTU<br />Buddy</h2>
+        <div class="wave">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </section>
+      <div class="default-box content image-container">
+        <img
+          class="default-box"
+          src="assets/static/images/home-decor-1.jpg"
+          alt="Image Description 1"
+        />
+        <img
+          class="default-box"
+          src="assets/static/images/home-decor-2.png"
+          alt="Image Description 2"
+        />
+        <img
+          class="default-box"
+          src="assets/static/images/home-decor-3.png"
+          alt="Image Description 3"
+        />
+      </div>
     </div>
 
     <!--Footer-->
