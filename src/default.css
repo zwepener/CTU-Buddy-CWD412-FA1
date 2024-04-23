@@ -37,9 +37,8 @@ body {
 
 .content {
   flex-grow: 1;
-  --pad-marg-len: 20px;
-  margin: var(--pad-marg-len);
-  padding: var(--pad-marg-len);
+  margin: 20px;
+  padding: 20px;
 }
 
 .default-textarea {
