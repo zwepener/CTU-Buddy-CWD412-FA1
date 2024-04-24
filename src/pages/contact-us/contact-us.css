@@ -42,3 +42,11 @@
 #contact-us-container #fb-submit {
   width: 100%;
 }
+
+#contact-us-container hr {
+ margin: 20px 0;
+}
+
+#contact-us-container #group ul {
+  list-style: none;
+}
