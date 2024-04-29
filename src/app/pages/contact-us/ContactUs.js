@@ -119,6 +119,19 @@ export default function ContactUs() {
           &nbsp;Submit
         </button>
       </form>
+      <hr />
+      <div id="group">
+        <span>
+          <b>Group Name: VRG</b>
+        </span>
+        <ul>
+          <li>Zandré Wepener - 20232642</li>
+          <li>Mzwakhe Khumalo - 20232619</li>
+          <li>Bophelo Malepu - 20232645</li>
+          <li>Luzuko Sinxezi - 20231300</li>
+        </ul>
+      </div>
+      <hr />
     </div>
   );
 }
