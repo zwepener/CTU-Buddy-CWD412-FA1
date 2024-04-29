@@ -1,12 +1,98 @@
-#home-container #welcome .image-container {
+#home-container {
   text-align: center;
+  user-select: none;
 }
 
-#home-container #welcome .image-container img {
-  margin: 10px;
-  width: 90%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  -ms-zoom-animation: default;
+#home-container .hero {
+  color: #0b2a58;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#home-container .s {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 20px;
+}
+
+#home-container .wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #06304a;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+#home-container .mod {
+  width: 100%; /* Make the container span the full width of its parent */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+#home-container .mod img {
+  width: 100%; /* Make the image span the full width of the container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Remove any extra space below the image */
+}
+
+#home-container .wave span {
+  position: absolute;
+  width: 325vh;
+  height: 325vh;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #811428;
+}
+
+#home-container .header {
+  position: relative;
+  z-index: 1;
+  font-size: 10vw;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+#home-container .s .wave span:nth-child(1) {
+  border-radius: 45%;
+  background: #811428;
+  animation: animate 5s linear infinite;
+}
+
+#home-container .s .wave span:nth-child(2) {
+  border-radius: 40%;
+  background: white;
+  animation: animate 10s linear infinite;
+}
+
+#home-container .s .wave span:nth-child(3) {
+  border-radius: 42.5%;
+  background: #06304a;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+#home-container .image-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+#home-container .image-container img {
+  flex-grow: 1;
+  margin: 10px 0;
 }
