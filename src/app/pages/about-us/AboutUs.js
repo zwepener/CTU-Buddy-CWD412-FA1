@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
-import ctu_logo from "../../resources/images/ctu-logo.jpg";
-import buddy_logo from "../../resources/images/ctu-buddy-logo.png";
-import zandre_pic from "../../resources/images/zandre-pic.jpeg";
-import mzwakhe_pic from "../../resources/images/mzwakhe-pic.jpg";
-import bophelo_pic from "../../resources/images/bophelo-pic.jpg";
-import luzuko_pic from "../../resources/images/luzuko-pic.jpg";
+import ctu_logo from "../../assets/static/images/ctu-logo.jpg";
+import buddy_logo from "../../assets/static/images/ctu-buddy-logo.png";
+
+import zandre_pic from "./assets/static/images/zandre-pic.jpeg";
+import mzwakhe_pic from "./assets/static/images/mzwakhe-pic.jpg";
+import bophelo_pic from "./assets/static/images/bophelo-pic.jpg";
+import luzuko_pic from "./assets/static/images/luzuko-pic.jpg";
 
 import "./AboutUs.css";
 
@@ -55,13 +56,13 @@ export default function AboutUs() {
         </Link>
         <br />
         <a
-          href="https://github.com/zwepener/CTU-Buddy-CWD412-FA1"
+          href="https://github.com/zwepener/vrg-cwd412-fa"
           id="git-repo"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fa-brands fa-github"></i>
-          <span>&nbsp;• CTU-Buddy-CWD412-FA1</span>
+          <span>&nbsp;• vrg-cwd412-fa</span>
         </a>
         <p>
           The CTU Buddy System is an innovative website designed to enhance the
