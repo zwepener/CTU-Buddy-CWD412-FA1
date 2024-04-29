@@ -1,8 +1,8 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
-import logo from "../../resources/images/ctu-buddy-logo.png";
-import "./Navbar.css";
+import logo from "../../../assets/static/images/ctu-buddy-logo.png";
+import "./Topnav.css";
 
-export default function Navbar() {
+export default function Topnav() {
   return (
     <>
       <nav className="navbar">

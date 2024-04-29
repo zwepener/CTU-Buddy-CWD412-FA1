@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./ui/navbar/Navbar";
+import Topnav from "./components/ui/topnav/Topnav";
 import Home from "./pages/home/Home";
 import Timetable from "./pages/timetable/Timetable";
 import Discussion from "./pages/discussion/Discussion";
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Topnav />}>
           <Route index element={<Home />} />
           <Route path="timetable" element={<Timetable />} />
           <Route path="discussion" element={<Discussion />} />
