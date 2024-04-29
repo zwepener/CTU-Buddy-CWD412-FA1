@@ -1,7 +1,7 @@
 // These are sample file only, the actual files will be more dynamically imported with the help of a database
-import file1 from "../../resources/sample files/CF412 FA1 (2024 Q1).pdf";
-import file2 from "../../resources/sample files/ENA412 FA1 (2024 Q1).pdf";
-import file3 from "../../resources/sample files/RD412 FA1 (2024 Q1).pdf";
+import file1 from "./assets/static/samples/CF412 FA1 (2024 Q1).pdf";
+import file2 from "./assets/static/samples/ENA412 FA1 (2024 Q1).pdf";
+import file3 from "./assets/static/samples/RD412 FA1 (2024 Q1).pdf";
 
 import "./ShareResources.css";
 
