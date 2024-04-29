@@ -1,18 +1,49 @@
 #timetable-container {
-  background-image: url("../../resources/images/timetable-bg.png");
+  background-image: url("./assets/static/images/timetable-bg.png");
   background-repeat: none;
   text-align: center;
+  user-select: none;
 }
 
 #timetable-container h3 {
   font-size: 3.5vw;
 }
 
-#timetable-container section img {
-  max-width: 70vw;
+#timetable-container table {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  border-collapse: collapse;
+  font-size: 1.5vw;
+}
+
+#timetable-container table th,
+#timetable-container table td {
+  border: 1px solid black;
+  padding: 2px 3px;
+  text-align: center;
+}
+
+#timetable-container table th {
+  background-color: #c5cae9;
+}
+
+#timetable-container table .theory {
+  background-color: #b2dfdb;
+}
+
+#timetable-container table .practical {
+  background-color: #ffcdd2;
+}
+
+#timetable-container table .group-research {
+  background-color: #ffcc80;
+}
+
+#timetable-container table .focus {
+  background-color: #f0f4c3;
+}
+
+#timetable-container table .other {
+  background-color: white;
 }
 
 #timetable-container .typewriter {
