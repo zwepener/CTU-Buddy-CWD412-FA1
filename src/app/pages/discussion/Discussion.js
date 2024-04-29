@@ -1,11 +1,13 @@
 import { useRef, useEffect } from "react";
 
+import default_profile from './assets/static/images/default-profile.jpg';
+
 import "./Discussion.css";
 
 function UserProfile() {
   return (
     <div className="user-profile">
-      <img className="user-profile-pic" src="#" alt="" />
+      <img className="user-profile-pic" src={default_profile} alt="" />
       <span className="user-display-name">&lt; User Display Name &gt;</span>
     </div>
   );
