@@ -1,7 +1,6 @@
 {
   "name": "vrg-cwd412-fa",
   "version": "0.1.0",
-  "homepage": "https://zwepener.github.io/",
   "private": true,
   "dependencies": {
     "react": "^18.3.1",
